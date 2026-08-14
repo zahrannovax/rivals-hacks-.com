@@ -214,7 +214,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		description:
 			'Marvel Rivals ESP and wallhack for Windows PC — hero boxes, health bars, ultimate status, and clear overlays in matches.',
 		h1: 'ESP',
-		intro: 'See heroes through walls during Marvel Rivals matches. Part of the same {brand} license.',
+		intro: 'See heroes through walls during Marvel Rivals matches. Part of the same {brand} ESP license.',
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/marvel-rivals-cheats/',
@@ -246,7 +246,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		description:
 			'Marvel Rivals aimbot for Windows PC — hero priority, FOV, smoothing, and no recoil you can tune before you queue.',
 		h1: 'Aimbot',
-		intro: 'Aim assist you can tune for Marvel Rivals. Included in the same {brand} license.',
+		intro: 'Aimbot you can tune for Marvel Rivals. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/marvel-rivals-cheats/',
@@ -278,7 +278,7 @@ export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
 		description:
 			'Marvel Rivals ability cooldown tracker for Windows PC — see enemy ultimates and cooldowns without filling the screen.',
 		h1: 'Cooldowns',
-		intro: 'Track enemy ability cooldowns during a match. Included in the same {brand} license.',
+		intro: 'Track enemy ability cooldowns during a Marvel Rivals match. Included in the same {brand} license.',
 		ctaPrimary: brandCopy.ctaBuy,
 		ctaSecondary: 'Marvel Rivals Cheats overview',
 		ctaSecondaryHref: '/marvel-rivals-cheats/',

@@ -98,7 +98,7 @@ export const blogUi: Record<
 			'Marvel Rivals guides — hero ESP, aimbot notes, DPS tips, and NACE update coverage. English blog at rivalshacks.com/blog/.',
 		blogH1: 'Marvel Rivals Cheats Intel',
 		blogIntro:
-			'Short Marvel Rivals guides for ranked and quick play. Pair these tips with the Marvel Rivals Cheats product pages when you need ESP, aimbot, or cooldown tracker.',
+			'Short Marvel Rivals Cheats intel for ranked and quick play. Pair these tips with the product pages when you need ESP, aimbot, or cooldown tracker.',
 		readMore: 'Read guide',
 		published: 'Published',
 		updated: 'Updated',
