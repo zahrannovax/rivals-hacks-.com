@@ -1,0 +1,379 @@
+import type { PageId } from './content.generated';
+import { fillBrandTokens, seoDescription } from '../brand';
+import { brandCopy, brandSeo, seoPageTitle } from '../site-core';
+
+export type SimpleSection = {
+	h2: string;
+	paragraphs: string[];
+	list?: string[];
+};
+
+export type SimplePageCopy = {
+	title: string;
+	description: string;
+	h1: string;
+	intro: string;
+	ctaPrimary: string;
+	ctaSecondary?: string;
+	ctaSecondaryHref?: string;
+	galleryTitle: string;
+	sections: SimpleSection[];
+};
+
+function page(copy: SimplePageCopy): SimplePageCopy {
+	return {
+		...copy,
+		title: seoPageTitle(copy.title),
+		description: seoDescription(copy.description),
+		intro: fillBrandTokens(copy.intro),
+		sections: copy.sections.map((section) => ({
+			...section,
+			h2: fillBrandTokens(section.h2),
+			paragraphs: section.paragraphs.map(fillBrandTokens),
+			list: section.list?.map(fillBrandTokens),
+		})),
+	};
+}
+
+/** Short, plain-English overrides for key EN nav pages — meta from brand.seo */
+export const simplePageCopy: Partial<Record<PageId, SimplePageCopy>> = {
+	features: page({
+		title: brandSeo.featuresTitle,
+		description: brandSeo.featuresDescription,
+		h1: 'Features',
+		intro: brandCopy.featuresIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'View store',
+		ctaSecondaryHref: '/pricing/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Hero ESP',
+				paragraphs: [
+					'See enemy heroes through walls with health, shields, and ultimate status.',
+					'Keep team comps and objective markers readable without flooding the screen.',
+				],
+				list: [
+					'Hero ESP with ultimate status',
+					'Health and shield bars',
+					'Team composition ESP',
+					'Objective marker ESP',
+				],
+			},
+			{
+				h2: 'Aimbot & recoil',
+				paragraphs: [
+					'Aim help you can tune for Duelists, Vanguards, and Strategists.',
+					'Set FOV, smoothing, and hero priority before you queue.',
+				],
+				list: [
+					'Advanced aimbot with hero prioritization',
+					'No recoil system',
+					'FOV customization',
+					'Aim smoothing controls',
+				],
+			},
+			{
+				h2: 'Trackers & extras',
+				paragraphs: [
+					'Track ability cooldowns and keep overlays off stream captures.',
+					'Cloud-DMA and AWS options are available if you need them.',
+				],
+				list: ['Ability cooldown tracker', 'Stream-proof mode', 'Cloud-DMA option', 'AWS option'],
+			},
+			{
+				h2: 'Updates & support',
+				paragraphs: [
+					'We rebuild after big {game} or {antiCheat} patches.',
+					'Check Status before you play after a patch day.',
+				],
+				list: ['Anti-cheat bypass', '24/7 support', 'Status on the Status page', 'Email support with your order ID'],
+			},
+		],
+	}),
+	pricing: page({
+		title: brandSeo.storeTitle,
+		description: brandSeo.storeDescription,
+		h1: 'Store',
+		intro: brandCopy.storeIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Setup guide',
+		ctaSecondaryHref: '/setup/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'What you get',
+				paragraphs: [
+					'Full package access for Windows 10 / 11.',
+					'Same hero ESP, aimbot, and cooldown tracker on monthly and lifetime plans.',
+				],
+				list: ['Hero ESP, aimbot, and cooldowns', 'Patch rebuilds while active', 'Digital delivery after checkout'],
+			},
+			{
+				h2: 'Plans',
+				paragraphs: [
+					'Pick monthly to try first, or lifetime for one payment.',
+					'Both plans unlock the same features after checkout.',
+				],
+				list: ['Monthly — 30 days', 'Lifetime — one-time', 'Instant license by email'],
+			},
+			{
+				h2: 'Before you buy',
+				paragraphs: ['Read the refund policy if you need it. Contact support with your order ID for help.'],
+				list: [
+					'<a href="/refund-policy/">Refund policy</a>',
+					'<a href="/faq/">FAQ</a>',
+					'<a href="/support/">Support</a>',
+				],
+			},
+		],
+	}),
+	updates: page({
+		title: brandSeo.statusTitle,
+		description: brandSeo.statusDescription,
+		h1: 'Status',
+		intro: brandCopy.statusIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Marvel Rivals Cheats overview',
+		ctaSecondaryHref: '/marvel-rivals-cheats/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Current status',
+				paragraphs: [
+					'As of 14 Aug 2026 the package is online for Marvel Rivals on Windows PC. We post a new note here when a game or NACE patch needs a rebuild.',
+					'If Status is green, you can queue. If we are rebuilding, wait for the next note.',
+				],
+				list: [
+					'Check this page before every match after a patch',
+					'Monthly and lifetime licenses get rebuilds while active',
+					'No cheat stays undetected forever — status first, then play',
+				],
+			},
+			{
+				h2: 'After a patch',
+				paragraphs: [
+					'Wait for our rebuild note, then launch. Do not play on an old build after a big update.',
+				],
+				list: ['Read the latest status note', 'Follow setup if something fails', 'Email support with your order ID'],
+			},
+			{
+				h2: 'Important',
+				paragraphs: ['No cheat is 100% safe forever. Stay updated and use safe settings.'],
+				list: ['Status first, then play', '<a href="/support/">Support</a> for license help'],
+			},
+		],
+	}),
+	hacks: page({
+		title: brandSeo.previewTitle,
+		description: brandSeo.previewDescription,
+		h1: 'Marvel Rivals Cheats',
+		intro: brandCopy.previewIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'View features',
+		ctaSecondaryHref: '/features/',
+		galleryTitle: 'In-match look',
+		sections: [
+			{
+				h2: 'What you get',
+				paragraphs: [
+					'One license for Marvel Rivals on Windows PC — built for ranked, quick play, and hero swaps.',
+				],
+				list: [
+					'Hero ESP with ultimate status',
+					'Aimbot with hero prioritization',
+					'Ability cooldown tracker',
+					'NACE rebuilds after patches',
+				],
+			},
+			{
+				h2: 'Built for Marvel Rivals',
+				paragraphs: [
+					'Read enemy heroes before you peek, track ultimates and cooldowns, and stay aware of objectives. Tune aimbot per hero so Duelists, Vanguards, and Strategists feel natural.',
+				],
+				list: [
+					'<a href="/marvel-rivals-esp/">ESP guide</a>',
+					'<a href="/marvel-rivals-aimbot/">Aimbot controls</a>',
+					'<a href="/marvel-rivals-cooldown-tracker/">Cooldown tracker</a>',
+					'<a href="/updates/">Live status</a>',
+				],
+			},
+			{
+				h2: 'How to start',
+				paragraphs: ['Buy a plan, get your license by email, then follow setup. Check Status after every major patch.'],
+				list: [
+					'<a href="/pricing/">Open store</a>',
+					'<a href="/setup/">Setup guide</a>',
+					'<a href="/updates/">Check status</a>',
+				],
+			},
+		],
+	}),
+	'tarkov-esp': page({
+		title: '{game} ESP | {brand}',
+		description:
+			'Marvel Rivals ESP and wallhack for Windows PC — hero boxes, health bars, ultimate status, and clear overlays in matches.',
+		h1: 'ESP',
+		intro: 'See heroes through walls during Marvel Rivals matches. Part of the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Marvel Rivals Cheats overview',
+		ctaSecondaryHref: '/marvel-rivals-cheats/',
+		galleryTitle: 'ESP in match',
+		sections: [
+			{
+				h2: 'What ESP shows',
+				paragraphs: ['Boxes, health, shields, ultimates, team comps, and objective markers.'],
+				list: ['Hero ESP with ultimate status', 'Health and shield bars', 'Team composition ESP', 'Objective marker ESP'],
+			},
+			{
+				h2: 'When to use it',
+				paragraphs: ['Clear payload fights and point holds without flooding the screen.'],
+				list: ['Tune opacity', 'Filter noise', 'Pair with cooldown tracker'],
+			},
+			{
+				h2: 'Next steps',
+				paragraphs: ['ESP is included with aimbot and cooldown tracker in one plan.'],
+				list: [
+					'<a href="/marvel-rivals-cheats/">Full product</a>',
+					'<a href="/features/">All features</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	'tarkov-aimbot': page({
+		title: '{game} Aimbot | {brand}',
+		description:
+			'Marvel Rivals aimbot for Windows PC — hero priority, FOV, smoothing, and no recoil you can tune before you queue.',
+		h1: 'Aimbot',
+		intro: 'Aim assist you can tune for Marvel Rivals. Included in the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Marvel Rivals Cheats overview',
+		ctaSecondaryHref: '/marvel-rivals-cheats/',
+		galleryTitle: 'Aimbot view',
+		sections: [
+			{
+				h2: 'Controls',
+				paragraphs: ['Set FOV, smoothing, and hero priority before you queue.'],
+				list: ['Hero prioritization', 'FOV customization', 'Aim smoothing controls', 'No recoil system'],
+			},
+			{
+				h2: 'Play styles',
+				paragraphs: ['Keep settings subtle for longer sessions. Raise strength only when you accept more risk.'],
+				list: ['Duelist profiles', 'Vanguard and Strategist tuning', 'Works with ESP'],
+			},
+			{
+				h2: 'Next steps',
+				paragraphs: ['Aimbot ships with hero ESP and cooldown tracker in one license.'],
+				list: [
+					'<a href="/marvel-rivals-cheats/">Full product</a>',
+					'<a href="/features/">All features</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	radar: page({
+		title: '{game} Cooldowns | {brand}',
+		description:
+			'Marvel Rivals ability cooldown tracker for Windows PC — see enemy ultimates and cooldowns without filling the screen.',
+		h1: 'Cooldowns',
+		intro: 'Track enemy ability cooldowns during a match. Included in the same {brand} license.',
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Marvel Rivals Cheats overview',
+		ctaSecondaryHref: '/marvel-rivals-cheats/',
+		galleryTitle: 'Cooldown overlay',
+		sections: [
+			{
+				h2: 'What it shows',
+				paragraphs: ['Ability cooldowns and ultimate windows so you know when to push or wait.'],
+				list: ['Ability cooldown tracker', 'Ultimate status with ESP', 'Stream-proof mode'],
+			},
+			{
+				h2: 'With ESP',
+				paragraphs: ['Use cooldowns to time fights. Use ESP when you peek.'],
+				list: [
+					'<a href="/marvel-rivals-esp/">ESP guide</a>',
+					'<a href="/marvel-rivals-cheats/">Full product</a>',
+					'<a href="/pricing/">Store</a>',
+				],
+			},
+		],
+	}),
+	setup: page({
+		title: brandSeo.setupTitle,
+		description: brandSeo.setupDescription,
+		h1: 'Setup',
+		intro: brandCopy.setupIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Check status',
+		ctaSecondaryHref: '/updates/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Before you install',
+				paragraphs: ['Buy a plan first. You get a license by email.'],
+				list: ['Windows 10 / 11 PC', 'Disable conflicting overlays', 'Have your order email ready'],
+			},
+			{
+				h2: 'Install steps',
+				paragraphs: ['Run the loader as admin, paste your license, then launch {game}.'],
+				list: ['Download the loader from your delivery email', 'Paste license key', 'Launch the game'],
+			},
+			{
+				h2: 'If something fails',
+				paragraphs: ['Check Status after a patch. Email {email} with your order ID.'],
+				list: ['<a href="/updates/">Status page</a>', '<a href="/support/">Support</a>', '<a href="/faq/">FAQ</a>'],
+			},
+		],
+	}),
+	support: page({
+		title: brandSeo.supportTitle,
+		description: brandSeo.supportDescription,
+		h1: 'Support',
+		intro: brandCopy.supportIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'FAQ',
+		ctaSecondaryHref: '/faq/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'How to contact us',
+				paragraphs: ['Email {email}. Include your order ID and a short note about the issue.'],
+				list: ['Order ID from your receipt', 'Windows version', 'What you already tried'],
+			},
+			{
+				h2: 'Faster answers',
+				paragraphs: ['Check FAQ and Status before you write. Many setup questions are already covered.'],
+				list: ['<a href="/faq/">FAQ</a>', '<a href="/updates/">Status</a>', '<a href="/setup/">Setup</a>'],
+			},
+		],
+	}),
+	faq: page({
+		title: brandSeo.faqTitle,
+		description: brandSeo.faqDescription,
+		h1: 'FAQ',
+		intro: brandCopy.faqIntro,
+		ctaPrimary: brandCopy.ctaBuy,
+		ctaSecondary: 'Support',
+		ctaSecondaryHref: '/support/',
+		galleryTitle: 'In-game look',
+		sections: [
+			{
+				h2: 'Buying & delivery',
+				paragraphs: ['You get a digital license by email after payment.'],
+				list: ['Instant delivery after checkout', 'Keep your order email', 'One license per purchase'],
+			},
+			{
+				h2: 'Setup & updates',
+				paragraphs: ['Follow Setup after you buy. Check Status after big {game} or {antiCheat} patches.'],
+				list: ['<a href="/setup/">Setup guide</a>', '<a href="/updates/">Status</a>'],
+			},
+			{
+				h2: 'Refunds',
+				paragraphs: ['Read the refund policy before you buy if you need details.'],
+				list: ['<a href="/refund-policy/">Refund policy</a>', '<a href="/support/">Support</a>'],
+			},
+		],
+	}),
+};
