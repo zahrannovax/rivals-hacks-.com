@@ -183,7 +183,49 @@ function trailingSlashRedirect(pathname) {
 	if (!pathname || pathname === '/' || pathname.includes('.') || pathname.endsWith('/')) {
 		return null;
 	}
+	// dist/404.html is a file. Adding a slash loops with Pages pretty URLs (/404 ⇄ /404/).
+	if (pathname === '/404') return null;
 	return `${pathname}/`;
+}
+
+function isBlockedStudio(pathname) {
+	return (
+		pathname === '/brand-studio' ||
+		pathname.startsWith('/brand-studio/') ||
+		pathname === '/__brand' ||
+		pathname.startsWith('/__brand/')
+	);
+}
+
+async function serveNotFoundPage(context, url) {
+	const headers = new Headers({
+		'Cache-Control': 'no-store',
+		'X-Robots-Tag': 'noindex, nofollow',
+	});
+	let body =
+		'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Not found</title></head><body><p>Page not found</p></body></html>';
+
+	try {
+		const assets = context.env?.ASSETS;
+		if (assets) {
+			const assetRes = await assets.fetch(new URL('/404.html', url.origin));
+			if (assetRes.body && assetRes.status !== 308 && assetRes.status !== 301 && assetRes.status !== 302) {
+				body = assetRes.body;
+				const contentType = assetRes.headers.get('Content-Type');
+				if (contentType) headers.set('Content-Type', contentType);
+			}
+		}
+	} catch {
+		// Fallback HTML above.
+	}
+
+	if (!headers.has('Content-Type')) {
+		headers.set('Content-Type', 'text/html; charset=utf-8');
+	}
+	applySecurityHeaders(headers, { html: true });
+	headers.set('X-Robots-Tag', 'noindex, nofollow');
+	headers.set('Cache-Control', 'no-store');
+	return new Response(body, { status: 404, headers });
 }
 
 export async function onRequest(context) {
@@ -207,6 +249,10 @@ export async function onRequest(context) {
 		});
 		applySecurityHeaders(headers);
 		return new Response(null, { status: 301, headers });
+	}
+
+	if (isBlockedStudio(url.pathname)) {
+		return serveNotFoundPage(context, url);
 	}
 
 	const pathRedirect =

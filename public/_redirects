@@ -1,10 +1,6 @@
-# Brand Studio — blocked on deploy (Workers assets reject status 404; use 200 → 404 page)
-/brand-studio /404.html 200
-/brand-studio/ /404.html 200
-/brand-studio/* /404.html 200
-/__brand /404.html 200
-/__brand/ /404.html 200
-/__brand/* /404.html 200
+# Brand Studio is stripped from dist. Do not rewrite to /404.html — Pages pretty URLs
+# turn that into /404, then trailing-slash rules loop (/404 ⇄ /404/). Missing paths
+# already serve dist/404.html with a real 404. Functions middleware also blocks these.
 
 # Legacy sitemap URL → primary index (GSC / old crawlers)
 /sitemap-index.xml /sitemap.xml 301
