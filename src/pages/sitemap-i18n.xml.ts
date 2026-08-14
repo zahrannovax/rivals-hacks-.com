@@ -9,7 +9,7 @@ import { renderUrlsetXml, sitemapResponseHeaders } from '../data/sitemap-xml';
 export const prerender = true;
 
 /**
- * Combined localized sitemap (525 URLs) — kept for backward compatibility.
+ * Combined localized sitemap (294 URLs) — kept for backward compatibility.
  * Prefer sitemap.xml → sitemap-{locale}.xml for regional Search Console submission.
  */
 export const GET: APIRoute = () => {

@@ -2,7 +2,7 @@ import { siteConfig } from './site';
 
 /** Screenshots used across product pages — simple marvel rivals cheats keyword alts. */
 export const tarkovImages = {
-	hero: '/images/hero-banner-new.png',
+	hero: '/images/hero-banner-new-2.png',
 	espWallhack: '/images/blog-image-12.webp',
 	aimbotCombat: '/images/blog-image-6.webp',
 	aimbotSkeleton: '/images/blog-image-12.webp',

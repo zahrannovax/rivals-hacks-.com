@@ -14,25 +14,25 @@ export const PAGE_IDS = [
 
 /** Hero image per page — product screenshots + homepage banner. */
 export const HERO_IMAGES = {
-	home: '/images/hero-banner-new-1024w.webp',
+	home: '/images/hero-banner-new-2.webp',
 	'tarkov-esp': '/images/hack-preview-image-1.webp',
 	'tarkov-aimbot': '/images/hack-preview-image-2.webp',
 	features: '/images/blog-image-12.webp',
 	pricing: '/images/blog-image-3.webp',
 	setup: '/images/blog-image-5.webp',
-	updates: '/images/hero-banner-new-1024w.webp',
+	updates: '/images/hero-banner-new-2.webp',
 	faq: '/images/blog-image-12.webp',
 	support: '/images/blog-image-3.webp',
 	undetected: '/images/blog-image-12.webp',
 	wallhack: '/images/hack-preview-image-1.webp',
 	radar: '/images/blog-image-5.webp',
 	battleye: '/images/blog-image-6.webp',
-	'cheats-2026': '/images/hero-banner-new-1024w.webp',
-	hacks: '/images/hero-banner-new.webp',
+	'cheats-2026': '/images/hero-banner-new-2.webp',
+	hacks: '/images/hero-banner-new-2.webp',
 	'cheat-download': '/images/blog-image-3.webp',
 	'mod-menu': '/images/blog-image-5.webp',
 	'soft-aim': '/images/hack-preview-image-2.webp',
-	'best-cheats': '/images/hero-banner-new-1024w.webp',
+	'best-cheats': '/images/hero-banner-new-2.webp',
 	'aimbot-hack': '/images/hack-preview-image-2.webp',
 	'esp-hack': '/images/hack-preview-image-1.webp',
 	'unlock-all': '/images/blog-image-5.webp',
@@ -88,22 +88,9 @@ export function clampDesc(s) {
 	return lastSpace > 130 ? trimmed.slice(0, lastSpace) : trimmed.slice(0, 160);
 }
 
-/** Remove Zadeyo from meta title/description strings only. */
-export function stripZadeyoFromMeta(text) {
-	return text
-		.replace(/\s*[—–-]\s*checkout via Zadeyo\.?/gi, '.')
-		.replace(/\s*[—–-]\s*checkout en Zadeyo\.?/gi, '.')
-		.replace(/\s*[—–-]\s*checkout über Zadeyo\.?/gi, '.')
-		.replace(/\s*with Zadeyo checkout\.?/gi, '.')
-		.replace(/\s*via Zadeyo checkout\.?/gi, '.')
-		.replace(/\s*Checkout via Zadeyo\.?/gi, '')
-		.replace(/\s*Zadeyo checkout,?\s*/gi, ' ')
-		.replace(/\s*Zadeyo delivery\.?/gi, ' instant digital delivery.')
-		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
-		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Tarkov Cheats')
-		.replace(/\s{2,}/g, ' ')
-		.trim();
+/** Strip leftover checkout-vendor phrases from meta title/description strings. */
+export function stripVendorFromMeta(text) {
+	return text.replace(/\s{2,}/g, ' ').trim();
 }
 
 /** Build a page section. Pass 2+ paragraph strings; optional trailing string[] becomes list. */
@@ -124,11 +111,11 @@ export function section(h2, ...args) {
 /** Authoritative external citation helpers (open in new tab). */
 export const EXT = {
 	activision:
-		'<a href="https://www.escapefromtarkov.com/" target="_blank" rel="noopener noreferrer">Escape from Tarkov</a>',
+		'<a href="https://www.marvelrivals.com/" target="_blank" rel="noopener noreferrer">Marvel Rivals</a>',
 	tarkov:
-		'<a href="https://www.escapefromtarkov.com/" target="_blank" rel="noopener noreferrer">Escape from Tarkov</a>',
+		'<a href="https://www.marvelrivals.com/" target="_blank" rel="noopener noreferrer">Marvel Rivals</a>',
 	status:
-		'<a href="https://www.escapefromtarkov.com/support" target="_blank" rel="noopener noreferrer">Escape from Tarkov Support</a>',
+		'<a href="https://www.marvelrivals.com/" target="_blank" rel="noopener noreferrer">Marvel Rivals</a>',
 	battleye:
-		'<a href="https://www.battleye.com/" target="_blank" rel="noopener noreferrer">BattlEye Anti-Cheat</a>',
+		'<a href="https://nace.nie.easebar.com/docs/" target="_blank" rel="noopener noreferrer">NACE</a>',
 };

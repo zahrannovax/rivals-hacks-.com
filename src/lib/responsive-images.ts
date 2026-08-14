@@ -41,29 +41,35 @@ export function contentSrcSet(baseSrc: string): string | undefined {
 }
 
 /**
- * Homepage / banner hero — compressed WebP ladder from hero-banner-new.png.
- * Native art 1672×941 (~16:9). Displayed LCP is 1024×576.
+ * Homepage / banner hero — high-quality WebP from hero-banner-new-2.png.
+ * Native art 1672×941. Always prefer the native file on desktop so it is not upscaled.
  */
 export const heroResponsive: ResponsiveWidth[] = [
-	{ src: '/images/hero-banner-new-640w.webp', width: 640 },
-	{ src: '/images/hero-banner-new-1024w.webp', width: 1024 },
-	{ src: '/images/hero-banner-new-1400w.webp', width: 1400 },
+	{ src: '/images/hero-banner-new-2-480w.webp', width: 480 },
+	{ src: '/images/hero-banner-new-2-640w.webp', width: 640 },
+	{ src: '/images/hero-banner-new-2-768w.webp', width: 768 },
+	{ src: '/images/hero-banner-new-2-960w.webp', width: 960 },
+	{ src: '/images/hero-banner-new-2-1024w.webp', width: 1024 },
+	{ src: '/images/hero-banner-new-2-1280w.webp', width: 1280 },
+	{ src: '/images/hero-banner-new-2-1400w.webp', width: 1400 },
+	{ src: '/images/hero-banner-new-2.webp', width: 1672 },
 ];
 
 export const heroDesktopResponsive: ResponsiveWidth[] = heroResponsive;
 
-/** Default LCP src — mid ladder WebP. */
-export const heroSrc = '/images/hero-banner-new-1024w.webp';
+/** Default LCP src — native WebP (not the 1024w ladder step). */
+export const heroSrc = '/images/hero-banner-new-2.webp';
 export const heroSrcSet = buildSrcSet(heroResponsive);
-export const heroSizes = '100vw';
+export const heroSizes =
+	'(max-width: 480px) 100vw, (max-width: 768px) 100vw, (max-width: 1024px) 100vw, (max-width: 1400px) 100vw, 1672px';
 
-/** LCP preload — same compressed WebP. */
+/** LCP preload — same native WebP so the browser does not lock onto 1024w. */
 export const heroPreloadSrc = heroSrc;
 export const heroMimeType = 'image/webp';
 
-/** Exact native dimensions of the LCP file (no zoom crop). */
-export const heroWidth = 1024;
-export const heroHeight = 576;
+/** Exact native dimensions of the LCP file. */
+export const heroWidth = 1672;
+export const heroHeight = 941;
 
 /** Responsive widths for below-fold content images. */
 export const contentWidths = [480, 960] as const;

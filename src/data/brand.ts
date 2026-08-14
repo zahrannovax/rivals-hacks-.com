@@ -20,13 +20,13 @@ export const brand = {
 	/** Anti-cheat name used in Status / FAQ copy */
 	antiCheat: 'NACE',
 
-	logo: '/images/tarkov-cheats-logo.webp',
-	logoRaster: '/images/tarkov-cheats-logo.png',
+	logo: '/images/marvel-rivals-cheats-logo.webp',
+	logoRaster: '/images/marvel-rivals-cheats-logo.png',
 	logoRasterWidth: 512,
 	logoRasterHeight: 512,
 	logoAlt: 'Marvel Rivals Cheats logo',
-	defaultOgImage: '/images/hero-banner-new-1024w.webp',
-	heroImage: '/images/hero-banner-new-1024w.webp',
+	defaultOgImage: '/images/hero-banner-new-2.webp',
+	heroImage: '/images/hero-banner-new-2.webp',
 
 	plans: [
 		{ id: 'monthly', label: 'Monthly', price: 35, duration: 'P30D' },
@@ -142,7 +142,7 @@ export const brand = {
 	 */
 	sitemap: {
 		/** YYYY-MM-DD — Brand Studio can bump this on save to refresh crawl dates */
-		contentLastmod: '2026-08-14',
+		contentLastmod: '2026-08-15',
 		blogImageTitle: '{brand} blog',
 		blogImageCaption: 'Tips and updates for {primaryKeyword}',
 		reviewsImageTitle: '{brand} reviews',

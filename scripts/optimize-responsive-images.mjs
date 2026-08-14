@@ -4,8 +4,8 @@ import sharp from 'sharp';
 
 const imagesDir = path.resolve('public/images');
 
-/** Hero LCP asset — responsive widths for srcset */
-const HERO_WIDTHS = [640, 1024, 1400];
+/** Hero LCP asset — widths for phones, tablets, laptops, and 2x displays */
+const HERO_WIDTHS = [480, 640, 768, 960, 1024, 1280, 1400];
 
 /** Below-fold content images — smaller variants for gallery/product cards */
 const CONTENT_WIDTHS = [480, 960];
@@ -13,20 +13,22 @@ const CONTENT_WIDTHS = [480, 960];
 const SKIP_PATTERNS = [
 	/-\d+w\.webp$/i,
 	/tarkov-cheats-logo/i,
+	/marvel-rivals-cheats-logo/i,
 	/hero-banner-new/i,
 	/favicon/i,
 ];
 
 async function optimizeHero() {
-	const source = path.join(imagesDir, 'hero-banner-new.png');
+	const source = path.join(imagesDir, 'hero-banner-new-2.png');
 	const meta = await sharp(source).metadata();
 	const results = [];
 
 	for (const width of HERO_WIDTHS) {
 		if (meta.width && width > meta.width) continue;
-		const file = `hero-banner-new-${width}w.webp`;
+		const file = `hero-banner-new-2-${width}w.webp`;
 		const dest = path.join(imagesDir, file);
-		const quality = width <= 480 ? 56 : width <= 640 ? 70 : 78;
+		const quality =
+			width <= 480 ? 72 : width <= 640 ? 78 : width <= 960 ? 84 : width <= 1280 ? 88 : 92;
 		const buffer = await sharp(source)
 			.resize({ width, withoutEnlargement: true })
 			.webp({ quality, effort: 6 })

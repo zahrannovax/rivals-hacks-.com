@@ -62,12 +62,9 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	.hero__media img {
-		/* Cover = keep proportions; crop top/bottom of the shorter bar */
 		object-fit: cover;
 		object-position: center center;
 		image-rendering: auto;
-		transform: translateZ(0);
-		animation: hero-in 0.9s ease-out both;
 	}
 
 	.hero__veil {
@@ -262,8 +259,7 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 	}
 
 	@media (prefers-reduced-motion: reduce) {
-		.hero__copy,
-		.hero__media img {
+		.hero__copy {
 			animation: none;
 		}
 
@@ -278,9 +274,28 @@ const monthly = productInfo.plans.find((p) => p.id === 'monthly') ?? productInfo
 		}
 	}
 
+	@media (min-width: 1600px) {
+		.hero__copy {
+			width: min(100%, 32rem);
+		}
+
+		.hero__brand {
+			font-size: clamp(2.4rem, 3.2vw, 3.6rem);
+		}
+	}
+
+	@media (max-width: 1280px) and (min-width: 901px) {
+		.hero__copy {
+			width: min(100%, 26rem);
+		}
+
+		.hero__brand {
+			font-size: clamp(1.9rem, 3.6vw, 2.85rem);
+		}
+	}
+
 	/*
-	 * Phones / small tablets: stop using the ultra-wide 3.15:1 bar.
-	 * That ratio collapses to ~120px tall on a 390px phone and clips the CTA.
+	 * Phones / small tablets: drop the fixed 16:9 frame so copy and CTA stay on-screen.
 	 * Mobile = taller full-bleed panel; height grows with copy.
 	 */
 	@media (max-width: 900px) {

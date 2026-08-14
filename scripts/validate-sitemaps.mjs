@@ -52,7 +52,7 @@ async function resolveDistRoot() {
 const SITE = readBrandUrl();
 const IMAGE_SITEMAP_ENTRIES = countBrandSitemapImages();
 
-const BLOG_PAGES = 18; // /blog/ index + 17 posts
+const BLOG_PAGES = 26; // /blog/ index + 25 posts
 const REVIEW_PAGES = 11; // /reviews/ index + 10 review detail pages
 const FAQ_PAGES = 11; // FAQ answer pages (index is in the product pages)
 /** Product pages in sitemap — excludes cannibal EN URLs that 301 to stronger pillars */
@@ -65,10 +65,10 @@ const BLOG_PAGES_PER_LOCALE = 0; // Locale blog URLs 301 to EN; not in sitemaps
 const PAGES_PER_LOCALE = PRODUCT_PAGES_PER_LOCALE + BLOG_PAGES_PER_LOCALE;
 const I18N_URLS = I18N_LOCALES * PAGES_PER_LOCALE;
 const TOTAL_PAGES = ENGLISH_PAGES + I18N_URLS;
-/** Full EN HTML may still emit redirect stubs for cannibal URLs; sitemaps omit them */
+/** Full EN HTML may still emit leftover Tarkov folder stubs; sitemaps omit them */
 const ENGLISH_HTML_PAGES = 29 + BLOG_PAGES + REVIEW_PAGES + FAQ_PAGES;
-/** Locale HTML = product pages + blog redirect stubs (index + 17 posts) that are omitted from sitemaps */
-const LOCALE_BLOG_REDIRECT_PAGES = 18;
+/** Locale HTML = product pages + blog redirect stubs (index + 25 posts) that are omitted from sitemaps */
+const LOCALE_BLOG_REDIRECT_PAGES = 26;
 const TOTAL_HTML_PAGES =
 	ENGLISH_HTML_PAGES + I18N_LOCALES * (PRODUCT_PAGES_PER_LOCALE + LOCALE_BLOG_REDIRECT_PAGES);
 const HREFLANG_PER_URL = 23;
@@ -103,31 +103,23 @@ const ENGLISH_PATHS = [
 	'/updates/',
 	'/faq/',
 	'/support/',
-	'/undetected-tarkov-cheats/',
-	'/tarkov-wallhack/',
 	'/marvel-rivals-cooldown-tracker/',
-	'/battleye-bypass/',
-	'/tarkov-cheats-2026/',
 	'/marvel-rivals-cheats/',
-	'/tarkov-cheat-download/',
-	'/tarkov-mod-menu/',
-	'/tarkov-soft-aim/',
-	'/tarkov-unlock-all/',
 	'/privacy-policy/',
 	'/refund-policy/',
 	'/terms/',
 	'/blog/',
-	'/blog/tarkov-scav-run-aggressive-strategies/',
-	'/blog/tarkov-loot-routes-guide/',
+	'/blog/marvel-rivals-patch-notes-guide/',
+	'/blog/marvel-rivals-skin-leaks-guide/',
 	'/blog/best-marvel-rivals-character/',
-	'/blog/tarkov-skin-leaks-guide/',
-	'/blog/tarkov-tournament-meta-guide/',
+	'/blog/marvel-rivals-ranked-aggression-guide/',
+	'/blog/marvel-rivals-tournament-meta-guide/',
+	'/blog/marvel-rivals-map-rotation-guide/',
 	'/blog/best-fps-mod-marvel-rivals/',
 	'/blog/what-is-practice-doom-match-marvel-rivals/',
-	'/blog/tarkov-patch-notes-guide/',
 	'/blog/marvel-rivals-cheats-guide/',
-	'/blog/escape-from-tarkov-cheats-buyers-guide/',
-	'/blog/tarkov-cheats-2026-whats-new/',
+	'/blog/marvel-rivals-cheats-buyers-guide/',
+	'/blog/marvel-rivals-cheats-2026-whats-new/',
 	'/blog/hero-esp-ultimate-status/',
 	'/blog/advanced-aimbot-hero-priority/',
 	'/blog/ability-cooldown-tracker/',
@@ -140,8 +132,8 @@ const ENGLISH_PATHS = [
 	'/blog/cloud-dma-option/',
 	'/blog/what-hwid-spoofer-does-for-safety/',
 	'/blog/marvel-rivals-hacks/',
-	'/blog/elitefn-vs-tarkov-cheats-two-week-test/',
-	'/blog/tarkov-cheats-vs-ghostware-features-pricing/',
+	'/blog/elitefn-vs-marvel-rivals-cheats-two-week-test/',
+	'/blog/marvel-rivals-cheats-vs-ghostware-features-pricing/',
 	'/reviews/',
 	'/reviews/marvel-rivals-aimbot-review-xkrypt0/',
 	'/reviews/marvel-rivals-esp-review-buildsr4k/',
@@ -318,6 +310,14 @@ async function main() {
 	if (errors === 0) {
 		ok('Image sitemap hosts Features, Store (/pricing/), and Status (/updates/)');
 	}
+
+	const leftoverTarkovLocs = [...enLocs, ...i18nLocs, ...imageLocs].filter((u) =>
+		/tarkovcheats\.org|\/tarkov-|\/best-tarkov-cheats|\/battleye-bypass|\/undetected-tarkov/i.test(u),
+	);
+	if (leftoverTarkovLocs.length > 0) {
+		fail(`Sitemap still lists leftover Tarkov URLs: ${leftoverTarkovLocs.slice(0, 5).join(', ')}`);
+		bump();
+	} else ok('Sitemaps list Marvel Rivals URLs on rivalshacks.com only');
 
 	// English path coverage (skip intentional 301 stubs)
 	for (const p of ENGLISH_PATHS) {

@@ -15,36 +15,36 @@ export type PageSitemapMeta = {
 /**
  * SEO priority and crawl hints per page — keyed by PageId (single source of truth).
  * English URLs use `priority`; localized URLs use `i18nPriority`.
- * `lastmod` reflects when BattlEye page's content actually changed — do NOT reset all
+ * `lastmod` reflects when that page's content actually changed — do NOT reset all
  * pages to the same date on deploy, only bump pages whose content was edited.
  */
 export const pageSitemapMeta: Record<PageId, PageSitemapMeta> = {
-	home: { priority: 0.95, changefreq: 'daily', i18nPriority: 0.88, lastmod: '2026-08-14' },
+	home: { priority: 0.95, changefreq: 'daily', i18nPriority: 0.88, lastmod: '2026-08-15' },
 	/** Money URL for "marvel rivals cheats" */
-	hacks: { priority: 1.0, changefreq: 'weekly', i18nPriority: 0.9, lastmod: '2026-08-14' },
-	undetected: { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'cheats-2026': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'cheat-download': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'mod-menu': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'soft-aim': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'best-cheats': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'aimbot-hack': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'esp-hack': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'unlock-all': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	wallhack: { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	radar: { priority: 0.9, changefreq: 'weekly', i18nPriority: 0.85, lastmod: '2026-08-14' },
-	'battleye': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-13' },
-	'tarkov-esp': { priority: 0.92, changefreq: 'weekly', i18nPriority: 0.86, lastmod: '2026-08-14' },
-	'tarkov-aimbot': { priority: 0.92, changefreq: 'weekly', i18nPriority: 0.86, lastmod: '2026-08-14' },
-	pricing: { priority: 0.94, changefreq: 'weekly', i18nPriority: 0.85, lastmod: '2026-08-14' },
-	features: { priority: 0.9, changefreq: 'weekly', i18nPriority: 0.84, lastmod: '2026-08-14' },
-	setup: { priority: 0.88, changefreq: 'weekly', i18nPriority: 0.84, lastmod: '2026-08-14' },
-	updates: { priority: 0.93, changefreq: 'daily', i18nPriority: 0.85, lastmod: '2026-08-14' },
-	faq: { priority: 0.8, changefreq: 'monthly', i18nPriority: 0.82, lastmod: '2026-08-14' },
-	support: { priority: 0.8, changefreq: 'monthly', i18nPriority: 0.82, lastmod: '2026-08-14' },
-	privacy: { priority: 0.4, changefreq: 'yearly', i18nPriority: 0.35, lastmod: '2026-06-08' },
-	refund: { priority: 0.4, changefreq: 'yearly', i18nPriority: 0.35, lastmod: '2026-06-14' },
-	terms: { priority: 0.4, changefreq: 'yearly', i18nPriority: 0.35, lastmod: '2026-05-22' },
+	hacks: { priority: 1.0, changefreq: 'weekly', i18nPriority: 0.9, lastmod: '2026-08-15' },
+	undetected: { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'cheats-2026': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'cheat-download': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'mod-menu': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'soft-aim': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'best-cheats': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'aimbot-hack': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'esp-hack': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'unlock-all': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	wallhack: { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	radar: { priority: 0.9, changefreq: 'weekly', i18nPriority: 0.85, lastmod: '2026-08-15' },
+	'battleye': { priority: 0.3, changefreq: 'yearly', i18nPriority: 0.2, lastmod: '2026-08-15' },
+	'tarkov-esp': { priority: 0.92, changefreq: 'weekly', i18nPriority: 0.86, lastmod: '2026-08-15' },
+	'tarkov-aimbot': { priority: 0.92, changefreq: 'weekly', i18nPriority: 0.86, lastmod: '2026-08-15' },
+	pricing: { priority: 0.94, changefreq: 'weekly', i18nPriority: 0.85, lastmod: '2026-08-15' },
+	features: { priority: 0.9, changefreq: 'weekly', i18nPriority: 0.84, lastmod: '2026-08-15' },
+	setup: { priority: 0.88, changefreq: 'weekly', i18nPriority: 0.84, lastmod: '2026-08-15' },
+	updates: { priority: 0.93, changefreq: 'daily', i18nPriority: 0.85, lastmod: '2026-08-15' },
+	faq: { priority: 0.8, changefreq: 'monthly', i18nPriority: 0.82, lastmod: '2026-08-15' },
+	support: { priority: 0.8, changefreq: 'monthly', i18nPriority: 0.82, lastmod: '2026-08-15' },
+	privacy: { priority: 0.4, changefreq: 'yearly', i18nPriority: 0.35, lastmod: '2026-08-15' },
+	refund: { priority: 0.4, changefreq: 'yearly', i18nPriority: 0.35, lastmod: '2026-08-15' },
+	terms: { priority: 0.4, changefreq: 'yearly', i18nPriority: 0.35, lastmod: '2026-08-15' },
 };
 
 /** Most recent page lastmod — used as the sitemap index <lastmod> for page sitemaps. */

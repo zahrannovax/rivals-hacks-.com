@@ -74,7 +74,7 @@ const pageImageTemplates: Record<PageId, { title: string; caption: string }> = {
 };
 
 const sitemapDefaults = {
-	contentLastmod: '2026-08-10',
+	contentLastmod: '2026-08-15',
 	blogImageTitle: '{brand} blog',
 	blogImageCaption: 'Tips and updates for {primaryKeyword}',
 	reviewsImageTitle: '{brand} reviews',

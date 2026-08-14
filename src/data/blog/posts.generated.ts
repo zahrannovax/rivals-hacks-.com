@@ -6,40 +6,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "patch-notes-breakdown",
 		imageKey: "blog1",
 		published: "2026-07-29",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Patch Notes",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-patch-notes-guide",
-		title: "How to Read Escape from Tarkov Patch Notes",
-		metaDescription: "Learn how Escape from Tarkov patch notes change PMC loadouts, ammo economy, and maps. What to do after BattlEye and wipe updates in 2026.",
-		h1: "How to Read Escape from Tarkov Patch Notes Without Guessing",
-		intro: "When Battlestate Games drops a patch, most players skim the headline and queue anyway. That is how you walk into Customs with the wrong ammo and a gun that just lost its armor pen. Here is a calmer way to read Escape from Tarkov patch notes so your next raid still makes sense.",
-		keywords: ["escape from tarkov patch notes","tarkov wipe update","battleye patch","pmc loadout","tarkov intel"],
-		imageAlt: "Player reviewing Escape from Tarkov patch notes before a PMC raid",
+		slug: "marvel-rivals-patch-notes-guide",
+		title: "How to Read Marvel Rivals Patch Notes",
+		metaDescription: "Learn how Marvel Rivals patch notes change hero kits, ultimates, and maps. What to do after NACE and patch updates in 2026.",
+		h1: "How to Read Marvel Rivals Patch Notes Without Guessing",
+		intro: "When NetEase drops a patch, most players skim the headline and queue anyway. That is how you walk into ranked with a nerfed Duelist and an ult that just lost its punch. Here is a calmer way to read Marvel Rivals patch notes so your next match still makes sense.",
+		keywords: ["marvel rivals patch notes","marvel rivals patch update","nace patch","hero loadout","marvel rivals intel"],
+		imageAlt: "Player reviewing Marvel Rivals patch notes before a ranked match",
 		sections: [
 			{
-				h2: "What actually matters in a Tarkov patch?",
+				h2: "What actually matters in a Marvel Rivals patch?",
 				paragraphs: [
-					"Official notes live on <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how I kill armored PMCs? Does this change what loot is worth looting? Does this change which extract or map I should run tonight?",
-					"Ammo tables, armor classes, boss spawn rates, and trader unlocks move the real economy. A small recoil tweak on an M4 looks boring in a video title, but it quietly reshapes mid-range fights on Woods and Interchange. Cosmetic lines and UI polish almost never decide whether you survive dorms.",
-					"If you also run third-party tools, separate game balance from anti-cheat maintenance. After a <a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> or client update, check our <a href=\"/updates/\">Tarkov Cheats status page</a> before you blame your own aim.",
+					"Official notes live on <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. Treat that page as the source of truth — Discord rumors and streamer hot takes come second. Ask three plain questions for every bullet: Does this change how I kill enemy Vanguards? Does this change which heroes got nerfed? Does this change which map or mode I should run tonight?",
+					"Cooldown times, ultimate charge, and damage numbers move the real ranked meta. A small Hela falloff tweak looks boring in a video title, but it quietly reshapes long sightlines on Tokyo 2099. Cosmetic lines and UI polish almost never decide a payload fight.",
+					"If you also run third-party tools, separate game balance from anti-cheat maintenance. After a <a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> or client update, check our <a href=\"/updates/\">Marvel Rivals Cheats status page</a> before you blame your own aim.",
 				],
 			},
 			{
 				h2: "Buffs, nerfs, and removed items — a simple framework",
 				paragraphs: [
-					"When an item is removed from raid loot pools, delete it from your mental shopping list the same day. Heavy nerfs demote a weapon from “default kit” to “situational.” Light nerfs are fine if you already shoot cleaner than most lobbies. Buffs deserve a short test block — ten focused raids — before you rebuild your entire stash around them.",
-					"Armor and ammunition changes usually matter more than a single gun’s recoil number. If a popular round loses penetration against class-five plates, your Customs push into three-stacks suddenly needs a different mag. Pair this reading habit with our <a href=\"/blog/tarkov-weapon-tier-list/\">Tarkov weapon tier list</a> so you are not chasing streamer kits that ignore your budget.",
+					"When a hero is nerfed, drop them from your default ranked pool the same day. Heavy nerfs demote a pick from “always lock” to “situational.” Light nerfs are fine if you already shoot cleaner than most lobbies. Buffs deserve a short test block — ten focused matches — before you rebuild your entire hero pool around them.",
+					"Ultimate charge and cooldown changes usually matter more than a single damage number. If a popular Duelist loses poke, your Tokyo 2099 plan suddenly needs a different first fight. Pair this reading habit with our <a href=\"/blog/best-marvel-rivals-character/\">character tier list</a> so you are not chasing streamer picks that ignore your role.",
 				],
 			},
 			{
 				h2: "How patches reshuffle loadouts and map plans",
 				paragraphs: [
-					"When mid-range rifles feel strong, prioritize optics and ammo that win 40–70 meter peeks. When healing items get tighter, play more conservatively near extracts and avoid ego third-parties. When a map POI shifts — new locked rooms, moved spawns, boss path changes — rewrite your first three minutes on that map before you farm it for quests.",
-					"Keep cosmetic shop chatter out of patch-day focus. Skin talk is fun; time-to-kill and extract camping patterns are what get you killed. For aggressive Scav timing after a meta shift, see our <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav run strategies</a>.",
-					"On big mornings, confirm <a href=\"https://www.escapefromtarkov.com/support/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov Support</a> looks healthy before you assume your client is broken. Then run a short checklist: note removed items, update your stash “buy list,” play five intentional raids, and only then lock a new main kit.",
+					"When hitscan Duelists feel strong, prioritize long sightlines and off-angles. When healers get tighter cooldowns, play more conservatively on point and avoid ego dives. When a map layout shifts — new cover, moved spawns, changed payload path — rewrite your first three minutes on that map before you farm ranked on it.",
+					"Keep cosmetic shop chatter out of patch-day focus. Skin talk is fun; time-to-kill and spawn timing are what get you killed. For aggressive ranked timing after a meta shift, see our <a href=\"/blog/marvel-rivals-ranked-aggression-guide/\">ranked aggression guide</a>.",
+					"On big mornings, confirm <a href=\"__HOLD5__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> looks healthy before you assume your client is broken. Then run a short checklist: note nerfed heroes, update your ranked pool, play five intentional matches, and only then lock a new main.",
 				],
 			}
 		]
@@ -47,41 +47,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-skin-leaks",
+		id: "marvel-rivals-skin-leaks",
 		imageKey: "blog4",
 		published: "2026-07-27",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Cosmetics",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-skin-leaks-guide",
-		title: "Tarkov Cosmetics & Skin Leaks: What Is Worth Buying",
-		metaDescription: "Sensible advice on Escape from Tarkov cosmetics and skin leaks — what to buy on the Flea Market, what to skip, and how looks affect raid readability.",
-		h1: "Tarkov Cosmetics and Skin Leaks: Buy Smart, Not Impulsive",
-		intro: "Leaks make every wipe feel like a fashion drop. Before you dump roubles into another loud outfit, decide whether the skin helps you play Escape from Tarkov — or just looks cool in a screenshot.",
-		keywords: ["tarkov skins","tarkov cosmetics","flea market skins","escape from tarkov apparel","tarkov intel"],
-		imageAlt: "Escape from Tarkov character cosmetics and gear appearance options",
+		slug: "marvel-rivals-skin-leaks-guide",
+		title: "Marvel Rivals Cosmetics & Skin Leaks: What Is Worth Buying",
+		metaDescription: "Sensible advice on Marvel Rivals cosmetics and skin leaks — what to buy in the costume shop, what to skip, and how looks affect match readability.",
+		h1: "Marvel Rivals Cosmetics and Skin Leaks: Buy Smart, Not Impulsive",
+		intro: "Leaks make every season feel like a fashion drop. Before you dump credits into another loud outfit, decide whether the skin helps you play Marvel Rivals — or just looks cool in a screenshot.",
+		keywords: ["marvel rivals skins","marvel rivals cosmetics","costume shop skins","marvel rivals apparel","marvel rivals intel"],
+		imageAlt: "Marvel Rivals character cosmetics and gear appearance options",
 		sections: [
 			{
 				h2: "Why most impulse cosmetic buys feel bad after a week",
 				paragraphs: [
-					"Shop rotations and official apparel come from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a>. Leaks are entertainment, not a shopping list. Many players spend hard-earned flea money the night before a wipe, then realize they still need meds, ammo, and a backup kit.",
-					"Controversial but useful: most cosmetics do not raise your survival rate. Some loud patterns even make you easier to spot in bushes on Woods or in dark Interchange hallways. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic peeks.",
+					"Shop rotations and official costumes come from <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. Leaks are entertainment, not a shopping list. Many players spend credits the night before a patch, then realize they still need a ranked-ready hero pool.",
+					"Most cosmetics do not raise your win rate. Some loud patterns even make you easier to spot on dark maps. Pros often prefer quieter silhouettes so enemy outlines stay readable in chaotic team fights.",
 				],
 			},
 			{
-				h2: "A simple worth-it checklist for Tarkov cosmetics",
+				h2: "A simple worth-it checklist for Marvel Rivals cosmetics",
 				paragraphs: [
-					"Buy if you will still wear it in ninety days and it stays readable in night raids. Pause if it overlaps three outfits you already own. Skip FOMO bundles packed with fillers you will never equip. Always keep a rouble floor for ammo and healing before fashion.",
-					"Do the math on bundles. Paying extra for two fillers you hate is worse than waiting for a single piece on the Flea Market. If a leak only hypes one jacket, wait for confirmation instead of panic-buying a full set.",
+					"Buy if you will still wear it in ninety days and it stays readable in night maps. Pause if it overlaps three outfits you already own. Skip FOMO bundles packed with fillers you will never equip. Always keep credits for the next battle pass before fashion.",
+					"Do the math on bundles. Paying extra for two fillers you hate is worse than waiting for a single piece in the costume shop. If a leak only hypes one jacket, wait for confirmation instead of panic-buying a full set.",
 				],
 			},
 			{
 				h2: "How to use leaks without getting played",
 				paragraphs: [
-					"Treat late-wipe leak waves as theme previews, not release dates. Decide a budget before something hits the store, not during the five-minute panic. A quiet daily habit works: open the shop for one minute, check your wishlist, then leave.",
-					"For competitive readability tips that actually affect fights, pair this with our <a href=\"/blog/tarkov-pro-settings-guide/\">pro settings guide</a>. Looking clean matters less than seeing the other PMC first.",
+					"Treat late-season leak waves as theme previews, not release dates. Decide a budget before something hits the store, not during the five-minute panic. A quiet daily habit works: open the shop for one minute, check your wishlist, then leave.",
+					"For competitive readability tips that actually affect fights, pair this with our <a href=\"/blog/best-fps-mod-marvel-rivals/\">FPS settings guide</a>. Looking clean matters less than seeing the other hero first.",
 				],
 			}
 		]
@@ -92,7 +92,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "best-marvel-rivals-character",
 		imageKey: "blog10",
 		published: "2026-07-25",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Tier List",
 		featured: true,
 		translations: {
@@ -108,7 +108,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "How this tier list actually works",
 				paragraphs: [
-					"Roster notes live on <a href=\"https://www.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. Balance patches move numbers. Playstyle does not. Rank a hero by the job you want: dive, hitscan, poke, peel, or heal. If a pick fights your habits, it is not “high tier” for you.",
+					"Roster notes live on <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. Balance patches move numbers. Playstyle does not. Rank a hero by the job you want: dive, hitscan, poke, peel, or heal. If a pick fights your habits, it is not “high tier” for you.",
 					"Vanguard, Duelist, and Strategist still have to cover a team. A stacked DPS lobby with no healer loses the point even if your aim is clean. Lock the role your group is missing first. Then pick the hero inside that role.",
 					"For the tool side of the same fights, the <a href=\"/blog/marvel-rivals-cheats-guide/\">Marvel Rivals cheats guide</a> explains ESP, aimbot, and cooldown tracking in plain language.",
 				],
@@ -151,41 +151,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-scav-run-meta",
+		id: "marvel-rivals-ranked-aggression",
 		imageKey: "blog11",
 		published: "2026-07-22",
-		updated: "2026-08-13",
-		category: "Scav Runs",
+		updated: "2026-08-15",
+		category: "Ranked",
 		featured: true,
 		translations: {
 		en: {
-		slug: "tarkov-scav-run-aggressive-strategies",
-		title: "Tarkov Scav Run Strategies That Actually Print Loot",
-		metaDescription: "Five aggressive but smart Escape from Tarkov Scav strategies — timings, extracts, third-parties, and how to leave raids with gear instead of empty pockets.",
-		h1: "Tarkov Scav Run Strategies: How to Leave With Gear",
-		intro: "Passive Scav players wait behind a bush while two PMC teams erase each other, then spray into the mess and die. Strong Scav runs manufacture a short advantage, grab what matters, and extract before the map collapses on you.",
-		keywords: ["tarkov scav run","scav strategies","escape from tarkov scav","tarkov extracts","tarkov esp"],
-		imageAlt: "Scav player moving toward extract with loot in Escape from Tarkov",
+		slug: "marvel-rivals-ranked-aggression-guide",
+		title: "Marvel Rivals Ranked Aggression That Actually Wins Fights",
+		metaDescription: "Five aggressive but smart Marvel Rivals ranked habits — timings, objectives, first fights, and how to take space without feeding.",
+		h1: "Marvel Rivals Ranked Aggression: Take Space Without Feeding",
+		intro: "Passive players wait behind a corner while two teams erase each other, then walk in late and die. Strong ranked pushes manufacture a short advantage, grab the objective, and leave before the next ult wave.",
+		keywords: ["marvel rivals ranked","marvel rivals aggression","marvel rivals payload","marvel rivals objectives","marvel rivals esp"],
+		imageAlt: "Marvel Rivals team pushing an objective in ranked",
 		sections: [
 			{
-				h2: "Why so many Scav runs feel soft",
+				h2: "Why so many ranked pushes feel soft",
 				paragraphs: [
-					"Scav kits are random, timers are limited, and player Scavs can turn on you. Waiting forever for a “perfect” third-party often means you arrive late to a wiped lobby with nothing left. Information tools like <a href=\"/tarkov-esp/\">Tarkov ESP</a> can help you see fights early — but you still need an exit plan.",
-					"Decide your extract before you swing. Take a clear damage window, grab high-value loot, then leave. The usual third-party clock in hot POIs is only a few seconds long once gunfire starts.",
+					"Ultimates are on timers, cooldowns are limited, and enemy heroes can turn a fight in one swing. Waiting forever for a “perfect” third fight often means you arrive late to a lost point. Information tools like <a href=\"/marvel-rivals-esp/\">Marvel Rivals ESP</a> can help you see fights early — but you still need an exit plan.",
+					"Decide the objective before you swing. Take a clear damage window, grab the point, then reset. The usual collapse clock on hot points is only a few seconds long once the first ult lands.",
 				],
 			},
 			{
 				h2: "Five aggressive habits that still work",
 				paragraphs: [
-					"Pre-aim common corners on Customs dorms and Interchange tech stores so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their magazine is weak.",
-					"Stay close to hard cover while you move — never more than a short sprint from a wall or vehicle. Pressure late rotates near extracts when players are silhouetted and greedy. Mode rules evolve with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> wipes; the geometry of first-shot advantage does not.",
+					"Pre-aim common corners on Tokyo 2099 and Yggsgard so you clear angles in under a second. Enter rooms with an exit path, not a panic turn. Fake one side of a doorway, then finish from the safer angle when their magazine is weak.",
+					"Stay close to hard cover while you move — never more than a short sprint from a wall or payload. Pressure late rotates near objectives when players are greedy. Mode rules evolve with <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> patches; the geometry of first-shot advantage does not.",
 				],
 			},
 			{
-				h2: "Warmup checklist before you queue a Scav",
+				h2: "Warmup checklist before you queue ranked",
 				paragraphs: [
-					"Know your map’s main extracts, bring a simple med plan, and pick two POIs with cover ladders instead of open fields. Pair this article with <a href=\"/blog/tarkov-loot-routes-guide/\">loot routes</a>, <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tiers</a>, and <a href=\"/blog/tarkov-warmup-maps-ranked/\">warmup routines</a>.",
-					"Try one session where you force early contact only when you have armor and a usable gun — then track whether you extracted before the third-party window closed.",
+					"Know the map’s main objectives, pick two cover lines instead of open fields, and lock a role your team still needs. Pair this article with <a href=\"/blog/marvel-rivals-map-rotation-guide/\">map rotations</a>, <a href=\"/blog/best-marvel-rivals-character/\">character tiers</a>, and <a href=\"/blog/what-is-practice-doom-match-marvel-rivals/\">warmup routines</a>.",
+					"Try one session where you force early contact only when your ultimate or a key cooldown is ready — then track whether you reset before the next team fight.",
 				],
 			}
 		]
@@ -193,41 +193,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-tournament-meta",
+		id: "marvel-rivals-tournament-meta",
 		imageKey: "blog7",
 		published: "2026-07-20",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Competitive",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-tournament-meta-guide",
-		title: "What Competitive Tarkov Players Optimize For",
-		metaDescription: "What strong Escape from Tarkov competitors optimize — spawn plans, loadouts, mid-raid habits, and which tournament habits help normal PMC queues.",
-		h1: "What Competitive Tarkov Players Optimize For",
-		intro: "Tournament winners and high-level duos are not lucky spawn gods. They optimize expected value: safer loot paths, cleaner mid-raid habits, and fights they choose on purpose. Here is what translates into your normal Escape from Tarkov queues.",
-		keywords: ["tarkov competitive","tarkov tournament","tarkov meta","pmc habits","tarkov intel"],
-		imageAlt: "Competitive Escape from Tarkov players reviewing raid strategy",
+		slug: "marvel-rivals-tournament-meta-guide",
+		title: "What Competitive Marvel Rivals Players Optimize For",
+		metaDescription: "What strong Marvel Rivals competitors optimize — spawn plans, loadouts, mid-match habits, and which tournament habits help normal ranked queues.",
+		h1: "What Competitive Marvel Rivals Players Optimize For",
+		intro: "Tournament winners and high-level stacks are not lucky spawn gods. They optimize expected value: safer first fights, cleaner mid-match habits, and fights they choose on purpose. Here is what translates into your normal Marvel Rivals queues.",
+		keywords: ["marvel rivals competitive","marvel rivals tournament","marvel rivals meta","ranked habits","marvel rivals intel"],
+		imageAlt: "Competitive Marvel Rivals players reviewing match strategy",
 		sections: [
 			{
 				h2: "Watch competitive VODs like a coach, not a fan",
 				paragraphs: [
-					"Start with schedules and film from <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> community events or trusted creators, then tag habits instead of memorizing a single POI name. Note the landing plan, first heal, first rotate, first voluntary fight, and the key late-raid decision.",
+					"Start with schedules and film from <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> community events or trusted creators, then tag habits instead of memorizing a single corner name. Note the spawn plan, first heal, first rotate, first voluntary fight, and the key late-match decision.",
 					"Five clear timestamps beat a full passive watch. You are stealing decision patterns, not cosplaying someone else’s spawn.",
 				],
 			},
 			{
 				h2: "Spawn EV and loadout patterns that keep showing up",
 				paragraphs: [
-					"Score every spawn on contest rate, loot quality in the first few minutes, extract pain, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then get third-partied.",
-					"Expect a reliable mid rifle, a close-range option, mobility or stamina management, and enough meds. High-tier loot is taken when free, not forced — matching the mindset in our <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tier list</a>.",
+					"Score every spawn on contest rate, first-fight quality, objective path, exit paths, and split potential with teammates. Edge spawns with clean exits often beat “sexy” mid-map landmarks that look good on stream and then get collapsed.",
+					"Expect a reliable mid-range Duelist, a close-range option, a Vanguard who can hold space, and a Strategist who can save the fight. High-value picks are taken when free, not forced — matching the mindset in our <a href=\"/blog/best-marvel-rivals-character/\">character tier list</a>.",
 				],
 			},
 			{
-				h2: "What actually translates to normal raids",
+				h2: "What actually translates to normal matches",
 				paragraphs: [
-					"Steal loot-timer discipline, a simple loadout spine, earlier rotates, and selective fights. Do not blindly mirror a trio drop when you solo queue. Winners rotate early enough to choose sides — the same idea shows up in our <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav aggression guide</a>.",
-					"Try this: watch fifteen minutes of a strong VOD with five timestamps. Steal one mid-raid habit only. Run it for a six-raid PMC block before adding another.",
+					"Steal cooldown discipline, a simple hero spine, earlier rotates, and selective fights. Do not blindly mirror a six-stack dive when you solo queue. Winners rotate early enough to choose sides — the same idea shows up in our <a href=\"/blog/marvel-rivals-ranked-aggression-guide/\">ranked aggression guide</a>.",
+					"Try this: watch fifteen minutes of a strong VOD with five timestamps. Steal one mid-match habit only. Run it for a six-match block before adding another.",
 				],
 			}
 		]
@@ -235,41 +235,41 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-loot-routes",
+		id: "marvel-rivals-map-rotation",
 		imageKey: "blog1",
 		published: "2026-07-18",
-		updated: "2026-08-13",
-		category: "Loot Routes",
+		updated: "2026-08-15",
+		category: "Maps",
 		featured: true,
 		translations: {
 		en: {
-		slug: "tarkov-loot-routes-guide",
-		title: "Tarkov Loot Routes That Leave Spawn Ready to Fight",
-		metaDescription: "High-percentage Escape from Tarkov loot routes for Customs, Woods, and Interchange — how to leave spawn with guns, armor, and meds that win mid-raid fights.",
-		h1: "Tarkov Loot Routes: Leave Spawn Ready to Fight",
-		intro: "Winning in Escape from Tarkov starts before the first gunfight. Random looting gets you killed with a pistol and no meds. These route habits consistently convert a spawn into a kit you can actually fight with.",
-		keywords: ["tarkov loot routes","customs loot path","interchange loot","tarkov spawn guide","tarkov esp"],
-		imageAlt: "Loot route planning across an Escape from Tarkov map",
+		slug: "marvel-rivals-map-rotation-guide",
+		title: "Marvel Rivals Map Rotations That Win the First Fight",
+		metaDescription: "High-percentage Marvel Rivals map rotations for Tokyo 2099, Yggsgard, and payload maps — how to leave spawn ready to take space.",
+		h1: "Marvel Rivals Map Rotations: Leave Spawn Ready to Fight",
+		intro: "Winning in Marvel Rivals starts before the first team fight. Random wandering gets you killed with no ultimate and a bad angle. These rotation habits convert a spawn into a first fight you can actually win.",
+		keywords: ["marvel rivals map rotation","tokyo 2099 route","yggsgard rotation","marvel rivals spawn guide","marvel rivals esp"],
+		imageAlt: "Marvel Rivals team rotating toward an objective",
 		sections: [
 			{
-				h2: "Why early inventory is the real bottleneck",
+				h2: "Why early positioning is the real bottleneck",
 				paragraphs: [
-					"Many early raid deaths happen because players loot like tourists. Strong players treat the first ninety seconds like a shopping list: usable gun, enough ammo, basic armor, and a heal. Drop spot matters less than sequence — a mediocre POI with discipline beats a stacked landmark with panic looting.",
-					"Secure a primary weapon and meds before hunting kills. Early ego chases are how hot-spawn players stay broke.",
+					"Many early deaths happen because players roam like tourists. Strong players treat the first ninety seconds like a checklist: usable cover, a heal, and a sightline. Spawn door matters less than sequence — a mediocre off-angle with discipline beats a stacked landmark with panic peeks.",
+					"Secure a primary angle and a cooldown plan before hunting kills. Early ego dives are how hot-spawn players throw the first point.",
 				],
 			},
 			{
-				h2: "Three route archetypes that keep printing gear",
+				h2: "Three rotation archetypes that keep winning space",
 				paragraphs: [
-					"Contested edge POI: land outer loot, snake inward, leave before late third parties. Uncontested chain: sacrifice early fights for a fuller kit by minute three. Mid-map surge: vacuum piles ninety to one hundred fifty seconds after hot spawns empty out.",
-					"Timing targets help: first gun quickly, clear a cluster, grab heals, then upgrade or leave. Slot priority is usually gun, ammo, armor, meds, then flex loot. POI names shift with <a href=\"https://www.escapefromtarkov.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Escape from Tarkov</a> wipes — keep the geometry, not just the landmark brand.",
+					"Contested edge: take outer cover, snake inward, leave before late collapses. Uncontested chain: sacrifice the first peek for a fuller setup by minute one. Mid-map surge: take space ninety to one hundred fifty seconds after the first fight empties out.",
+					"Timing targets help: first cover quickly, clear a corner, grab a heal, then push or wait. Slot priority is usually Vanguard space, Duelist angle, then Strategist LOS. Map names shift with <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> patches — keep the geometry, not just the landmark brand.",
 				],
 			},
 			{
 				h2: "Convert a strong spawn into a win",
 				paragraphs: [
-					"Pair these routes with <a href=\"/blog/tarkov-scav-run-aggressive-strategies/\">Scav aggression</a> and <a href=\"/blog/tarkov-weapon-tier-list/\">weapon tiers</a>. Leave spawn rich so mid-raid becomes a skill check instead of a scavenger panic.",
-					"If you practice with loot markers, read <a href=\"/tarkov-esp/\">Tarkov ESP</a> for category toggles — then still run the timer so your habits stay sharp without overlays.",
+					"Pair these routes with <a href=\"/blog/marvel-rivals-ranked-aggression-guide/\">ranked aggression</a> and <a href=\"/blog/best-marvel-rivals-character/\">character tiers</a>. Leave spawn ready so mid-match becomes a skill check instead of a panic reset.",
+					"If you practice with objective markers, read <a href=\"/marvel-rivals-esp/\">Marvel Rivals ESP</a> for category toggles — then still run the timer so your habits stay sharp without overlays.",
 				],
 			}
 		]
@@ -280,7 +280,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "best-fps-mod-marvel-rivals",
 		imageKey: "blog11",
 		published: "2026-07-12",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Settings",
 		featured: true,
 		translations: {
@@ -296,9 +296,9 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "What an FPS mod actually is in this game",
 				paragraphs: [
-					"<a href=\"https://www.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> runs on Unreal Engine 5. Community “FPS mods” are packaged engine settings — config paks or Scalability.ini files — not memory tools. They cut internal resolution, fog, shadows, and post-processing so 6v6 fights hold a stable frame rate.",
-					"<a href=\"https://rivalsfps.gg/\" target=\"_blank\" rel=\"noopener noreferrer\">RivalsFPS.gg</a> is the current one-click installer. It ships three paks: Standard at 80% internal resolution, Potato at 50%, and Ultra Potato at 30%. Use Standard unless your GPU is already on the floor. Potato and Ultra Potato look muddy on purpose.",
-					"If you want a manual drop, Nexus still hosts <a href=\"https://www.nexusmods.com/marvelrivals/mods/273\" target=\"_blank\" rel=\"noopener noreferrer\">FPS Performance Enhancer</a> and similar Scalability packs. Those go in AppData\\Local\\Marvel\\Saved\\Config\\Windows or in MarvelGame\\Marvel\\Content\\Paks\\~mods. One config pak at a time. Stacking two is how you crash on boot.",
+					"<a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> runs on Unreal Engine 5. Community “FPS mods” are packaged engine settings — config paks or Scalability.ini files — not memory tools. They cut internal resolution, fog, shadows, and post-processing so 6v6 fights hold a stable frame rate.",
+					"<a href=\"__HOLD1__\" target=\"_blank\" rel=\"noopener noreferrer\">RivalsFPS.gg</a> is the current one-click installer. It ships three paks: Standard at 80% internal resolution, Potato at 50%, and Ultra Potato at 30%. Use Standard unless your GPU is already on the floor. Potato and Ultra Potato look muddy on purpose.",
+					"If you want a manual drop, Nexus still hosts <a href=\"__HOLD2__\" target=\"_blank\" rel=\"noopener noreferrer\">FPS Performance Enhancer</a> and similar Scalability packs. Those go in AppData\\Local\\Marvel\\Saved\\Config\\Windows or in MarvelGame\\Marvel\\Content\\Paks\\~mods. One config pak at a time. Stacking two is how you crash on boot.",
 				],
 			},
 			{
@@ -341,7 +341,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "what-is-practice-doom-match-marvel-rivals",
 		imageKey: "blog4",
 		published: "2026-07-10",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Warmup",
 		featured: true,
 		translations: {
@@ -357,7 +357,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Practice Doom Match vs Arcade Doom Match",
 				paragraphs: [
-					"<a href=\"https://www.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> has two Doom Match doors. Arcade Doom Match is a 12-player free-for-all. Score is final hits. First to 16, or the 10-minute timer, ends the round. The top half of the lobby (six players) win. Number one is MVP.",
+					"<a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> has two Doom Match doors. Arcade Doom Match is a 12-player free-for-all. Score is final hits. First to 16, or the 10-minute timer, ends the round. The top half of the lobby (six players) win. Number one is MVP.",
 					"Practice Doom Match keeps the same FFA rules and the Sanctum Sanctorum map. The timer stretches to an hour. There is no kill cap that ends the session. You can join, swap heroes, and leave mid-lobby. That is the point — Overwatch-style warmup, not a scored Arcade game.",
 					"Open it from the Practice button above Change Mode. The rest of the Practice suite is Tutorial, Practice Range, and Practice Vs. AI. Range is bots and cooldowns. Practice Doom Match is live players, if the lobby fills.",
 				],
@@ -395,7 +395,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "marvel-rivals-cheats-guide",
 		imageKey: "blog2",
 		published: "2026-08-14",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Cheats Guide",
 		featured: true,
 		translations: {
@@ -412,7 +412,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "What Marvel Rivals cheats actually do",
 				paragraphs: [
 					"People who search <strong>marvel rivals hacks</strong> usually want the same thing: extra reads during a fight. The common stack is hero ESP, aimbot with hero priority, and an ability cooldown tracker. One license should cover that loop on Windows PC instead of three separate tools.",
-					"Official hero and mode notes live on <a href=\"https://www.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. The software sits on top of that client. It does not replace role knowledge. It shortens the time between “I heard footsteps” and “I know who is swinging.”",
+					"Official hero and mode notes live on <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a>. The software sits on top of that client. It does not replace role knowledge. It shortens the time between “I heard footsteps” and “I know who is swinging.”",
 					"If you want the short product list first, open the <a href=\"/marvel-rivals-cheats/\">Marvel Rivals Cheats overview</a>. This page is the longer match-day version.",
 				],
 			},
@@ -456,34 +456,34 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "escape-from-tarkov-cheats-buyers-guide",
+		id: "marvel-rivals-cheats-buyers-guide",
 		imageKey: "blog2",
 		published: "2026-07-28",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Buyers Guide",
 		featured: true,
 		translations: {
 		en: {
-		slug: "escape-from-tarkov-cheats-buyers-guide",
-		title: "Escape from Tarkov Cheats Buyers Guide",
-		metaDescription: "What to check before you buy escape from tarkov cheats — status pages, ESP features, soft aim, refunds, pricing, and red flags in 2026.",
-		h1: "Escape from Tarkov Cheats: What to Check Before You Buy",
-		intro: "Buying escape from tarkov cheats is noisy. Every storefront promises “undetected,” instant delivery, and god mode. This buyers guide slows you down with a practical checklist so you spend money on maintenance and clarity — not banners.",
-		keywords: ["escape from tarkov cheats","tarkov cheats buyers guide","buy tarkov cheats","undetected eft cheats","tarkov pricing"],
-		imageAlt: "Checklist for buying Escape from Tarkov cheats safely",
+		slug: "marvel-rivals-cheats-buyers-guide",
+		title: "Marvel Rivals Cheats Buyers Guide",
+		metaDescription: "What to check before you buy marvel rivals cheats — status pages, ESP features, soft aim, refunds, pricing, and red flags in 2026.",
+		h1: "Marvel Rivals Cheats: What to Check Before You Buy",
+		intro: "Buying marvel rivals cheats is noisy. Every storefront promises “undetected,” instant delivery, and god mode. This buyers guide slows you down with a practical checklist so you spend money on maintenance and clarity — not banners.",
+		keywords: ["marvel rivals cheats","marvel rivals cheats buyers guide","buy marvel rivals cheats","undetected marvel rivals cheats","marvel rivals pricing"],
+		imageAlt: "Checklist for buying Marvel Rivals cheats safely",
 		sections: [
 			{
 				h2: "Start with status, not screenshots",
 				paragraphs: [
-					"Ask whether the seller publishes a dated status page after BattlEye or client patches. Fancy galleries do not help if the tool is offline for three days. Tarkov Cheats posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
+					"Ask whether the seller publishes a dated status page after NACE or client patches. Fancy galleries do not help if the tool is offline for three days. Marvel Rivals Cheats posts rebuild notes on <a href=\"/updates/\">Updates</a> for that reason.",
 					"If a shop only answers in private Discord and never writes public notes, assume you will miss patch windows.",
 				],
 			},
 			{
-				h2: "Feature checklist that matches real Tarkov raids",
+				h2: "Feature checklist that matches real Marvel Rivals matches",
 				paragraphs: [
-					"For Escape from Tarkov, useful features usually mean player ESP with distance, loot filters, extract awareness, radar for flanks, and soft aim you can tone down. “Unlock all” marketing and battle-royale leftovers are red flags that the page was cloned from another game.",
-					"Compare the stack on <a href=\"/features/\">Features</a>, <a href=\"/tarkov-esp/\">ESP</a>, and <a href=\"/tarkov-aimbot/\">Aimbot</a>. If radar matters to how you hold extracts, confirm it exists before checkout.",
+					"For Marvel Rivals, useful features usually mean hero ESP with distance, ultimate filters, objective awareness, a cooldown tracker, and soft aim you can tone down. “Unlock all” marketing and battle-royale leftovers are red flags that the page was cloned from another game.",
+					"Compare the stack on <a href=\"/features/\">Features</a>, <a href=\"/marvel-rivals-esp/\">ESP</a>, and <a href=\"/marvel-rivals-aimbot/\">Aimbot</a>. If the cooldown tracker matters to how you hold objectives, confirm it exists before checkout.",
 				],
 			},
 			{
@@ -498,40 +498,40 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-cheats-2026-whats-new",
+		id: "marvel-rivals-cheats-2026-whats-new",
 		imageKey: "blog13",
 		published: "2026-07-26",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Product Updates",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-cheats-2026-whats-new",
-		title: "Tarkov Cheats 2026: What Changed This Year",
-		metaDescription: "What changed for tarkov cheats in 2026 — wipe cadence, BattlEye maintenance habits, ESP focus, and how Tarkov Cheats adapted for Escape from Tarkov.",
-		h1: "What Changed for Tarkov Cheats in 2026",
-		intro: "2026 did not invent cheating in Escape from Tarkov — it raised the bar for maintenance. Wipes, BattlEye pushes, and map updates punish stale builds. Here is what changed in how serious tarkov cheats packages need to operate.",
-		keywords: ["tarkov cheats 2026","eft cheats 2026","battleye 2026","tarkov wipe","tarkov cheats updates"],
-		imageAlt: "2026 updates for Tarkov Cheats on Escape from Tarkov",
+		slug: "marvel-rivals-cheats-2026-whats-new",
+		title: "Marvel Rivals Cheats 2026: What Changed This Year",
+		metaDescription: "What changed for marvel rivals cheats in 2026 — patch cadence, NACE maintenance habits, ESP focus, and how Marvel Rivals Cheats adapted for Marvel Rivals.",
+		h1: "What Changed for Marvel Rivals Cheats in 2026",
+		intro: "2026 did not invent cheating in Marvel Rivals — it raised the bar for maintenance. Wipes, NACE pushes, and map updates punish stale builds. Here is what changed in how serious marvel rivals cheats packages need to operate.",
+		keywords: ["marvel rivals cheats 2026","marvel rivals cheats 2026","nace 2026","marvel rivals patch","marvel rivals cheats updates"],
+		imageAlt: "2026 updates for Marvel Rivals Cheats on Marvel Rivals",
 		sections: [
 			{
 				h2: "Why 2026 buyers care more about status pages",
 				paragraphs: [
-					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/undetected-tarkov-cheats/\">undetected explainer</a> instead of empty guarantees.",
-					"<a href=\"https://www.battleye.com/\" target=\"_blank\" rel=\"noopener noreferrer\">BattlEye</a> and Battlestate client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
+					"Players got tired of “undetected forever” slogans. They want a dated note after patches. That is why we invest in the <a href=\"/updates/\">Updates</a> log and the <a href=\"/marvel-rivals-cheats/\">undetected explainer</a> instead of empty guarantees.",
+					"<a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> and Battlestate client updates still force rebuilds. The shops that survive are the ones that communicate during those windows.",
 				],
 			},
 			{
-				h2: "Feature focus shifted toward raid information",
+				h2: "Feature focus shifted toward match information",
 				paragraphs: [
-					"The winning feature set in 2026 is still ESP, radar, and tunable soft aim — because Tarkov fights are about information and first peeks. Loud rage features matter less than readable overlays you can turn down near extracts.",
-					"See the current stack on <a href=\"/features/\">Features</a> and the pillar at <a href=\"/tarkov-cheats/\">tarkov cheats</a>.",
+					"The winning feature set in 2026 is still ESP, cooldown tracker, and tunable soft aim — because Marvel Rivals fights are about information and first peeks. Loud rage features matter less than readable overlays you can turn down near objectives.",
+					"See the current stack on <a href=\"/features/\">Features</a> and the pillar at <a href=\"/marvel-rivals-cheats/\">marvel rivals cheats</a>.",
 				],
 			},
 			{
 				h2: "What we recommend you do differently this year",
 				paragraphs: [
-					"Check status before patch-day queues. Keep soft aim conservative. Use loot ESP filters so your screen stays clean. Read the <a href=\"/blog/marvel-rivals-cheats-guide/\">Marvel Rivals cheats guide</a> if you are new to the category.",
+					"Check status before patch-day queues. Keep soft aim conservative. Use hero ESP filters so your screen stays clean. Read the <a href=\"/blog/marvel-rivals-cheats-guide/\">Marvel Rivals cheats guide</a> if you are new to the category.",
 					"Pricing remains monthly and lifetime on <a href=\"/pricing/\">Pricing</a> with digital delivery after payment.",
 				],
 			}
@@ -543,7 +543,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "hero-esp-ultimate-status",
 		imageKey: "blog12",
 		published: "2026-07-24",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "ESP",
 		featured: true,
 		translations: {
@@ -559,7 +559,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Why ultimate status beats a nameless box",
 				paragraphs: [
-					"<a href=\"https://www.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> ultimates still win rounds. Charge comes from damage and healing plus a slow passive tick. Season 9 slowed that economy, so each ult matters more. Seeing 90% on Magneto or Cloak & Dagger changes whether you hold or bail.",
+					"<a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> ultimates still win rounds. Charge comes from damage and healing plus a slow passive tick. Season 9 slowed that economy, so each ult matters more. Seeing 90% on Magneto or Cloak & Dagger changes whether you hold or bail.",
 					"A nameless silhouette does not tell you if Goddess of Death is up. Ultimate status on <a href=\"/marvel-rivals-esp/\">hero ESP</a> does. Pair it with <a href=\"/blog/health-and-shield-bars/\">health and shield bars</a> so you do not dive a full bar into a charged support.",
 				],
 			},
@@ -573,7 +573,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Tune it, then confirm Status",
 				paragraphs: [
-					"ESP rebuilds after <a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> and client patches. Check <a href=\"/updates/\">Status</a> before ranked. The wider stack is on <a href=\"/features/\">Features</a> and the <a href=\"/blog/marvel-rivals-cheats-guide/\">cheats guide</a>. When you want the license, open the <a href=\"/pricing/\">Store</a>.",
+					"ESP rebuilds after <a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> and client patches. Check <a href=\"/updates/\">Status</a> before ranked. The wider stack is on <a href=\"/features/\">Features</a> and the <a href=\"/blog/marvel-rivals-cheats-guide/\">cheats guide</a>. When you want the license, open the <a href=\"/pricing/\">Store</a>.",
 				],
 			}
 		],
@@ -585,7 +585,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "advanced-aimbot-hero-priority",
 		imageKey: "blog6",
 		published: "2026-07-23",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Aimbot",
 		featured: true,
 		translations: {
@@ -615,7 +615,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Hotkeys and patch days",
 				paragraphs: [
-					"Bind a disable key for when you are healing allies or holding an angle you do not want corrected. After a <a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> update, confirm <a href=\"/updates/\">Status</a> before you retune. Compare shops in the <a href=\"/blog/marvel-rivals-hacks/\">hacks comparison</a>. Plans are on the <a href=\"/pricing/\">Store</a>.",
+					"Bind a disable key for when you are healing allies or holding an angle you do not want corrected. After a <a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> update, confirm <a href=\"/updates/\">Status</a> before you retune. Compare shops in the <a href=\"/blog/marvel-rivals-hacks/\">hacks comparison</a>. Plans are on the <a href=\"/pricing/\">Store</a>.",
 				],
 			}
 		],
@@ -627,7 +627,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "ability-cooldown-tracker",
 		imageKey: "blog5",
 		published: "2026-07-22",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Trackers",
 		featured: true,
 		translations: {
@@ -656,7 +656,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Do not overlay the whole kit",
 				paragraphs: [
-					"Filter to the enemy six in front of you. A 12-ability wall is noise. After a client or <a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> patch, check <a href=\"/updates/\">Status</a>. Buy on the <a href=\"/pricing/\">Store</a> when you want the tracker in the same license as ESP and aimbot.",
+					"Filter to the enemy six in front of you. A 12-ability wall is noise. After a client or <a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> patch, check <a href=\"/updates/\">Status</a>. Buy on the <a href=\"/pricing/\">Store</a> when you want the tracker in the same license as ESP and aimbot.",
 				],
 			}
 		],
@@ -668,7 +668,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "health-and-shield-bars",
 		imageKey: "blog6",
 		published: "2026-07-21",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "ESP",
 		featured: false,
 		translations: {
@@ -709,7 +709,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "team-composition-esp",
 		imageKey: "blog7",
 		published: "2026-07-20",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "ESP",
 		featured: false,
 		translations: {
@@ -750,7 +750,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "objective-marker-esp",
 		imageKey: "blog8",
 		published: "2026-07-18",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "ESP",
 		featured: false,
 		translations: {
@@ -791,7 +791,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "no-recoil-system",
 		imageKey: "blog6",
 		published: "2026-07-17",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Aimbot",
 		featured: false,
 		translations: {
@@ -832,7 +832,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "fov-customization",
 		imageKey: "blog1",
 		published: "2026-07-16",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Aimbot",
 		featured: false,
 		translations: {
@@ -873,7 +873,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "aim-smoothing-controls",
 		imageKey: "blog6",
 		published: "2026-07-14",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Aimbot",
 		featured: false,
 		translations: {
@@ -902,7 +902,7 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "Clips lie, Status does not",
 				paragraphs: [
-					"Record one unrated game. If the crosshair teleports, you are not done. Check <a href=\"/updates/\">Status</a> after <a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> patches. The <a href=\"/pricing/\">Store</a> includes the sliders in the aimbot license.",
+					"Record one unrated game. If the crosshair teleports, you are not done. Check <a href=\"/updates/\">Status</a> after <a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> patches. The <a href=\"/pricing/\">Store</a> includes the sliders in the aimbot license.",
 				],
 			}
 		],
@@ -914,7 +914,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "cloud-dma-option",
 		imageKey: "blog3",
 		published: "2026-07-13",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "DMA",
 		featured: true,
 		translations: {
@@ -930,8 +930,8 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "What DMA is, without the shopping list",
 				paragraphs: [
-					"Direct Memory Access lets a PCIe device read RAM without a cheat process sitting in the game OS. Typical hobby setups use an FPGA card, a radar PC, and optional HDMI fuser so ESP is not drawn by the game process. Firmware, IOMMU, and slot choice are the usual failure points.",
-					"Cloud-DMA keeps that split and moves the radar PC into a hosted machine. You are not flashing a 100T card from a Discord zip. AWS is a separate hosted path on the same idea: the heavy work is not a local unsigned driver next to <a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a>.",
+					"Direct Memory Access lets a PCIe device read RAM without a cheat process sitting in the game OS. Typical hobby setups use an FPGA card, a second PC, and optional HDMI fuser so ESP is not drawn by the game process. Firmware, IOMMU, and slot choice are the usual failure points.",
+					"Cloud-DMA keeps that split and moves the second PC into a hosted machine. You are not flashing a 100T card from a Discord zip. AWS is a separate hosted path on the same idea: the heavy work is not a local unsigned driver next to <a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a>.",
 				],
 			},
 			{
@@ -956,7 +956,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "what-hwid-spoofer-does-for-safety",
 		imageKey: "blog9",
 		published: "2026-07-19",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Undetected",
 		featured: true,
 		translations: {
@@ -973,7 +973,7 @@ export const blogPosts: BlogPostDefinition[] = [
 				h2: "What HWID actually is",
 				paragraphs: [
 					"HWID is not one serial. Anti-cheat builds a fingerprint from several reads: motherboard SMBIOS, disk serials, network MAC, GPU identifiers, and Windows install data. Some stacks also look at TPM. Change one easy value and leave the rest, and the set still matches.",
-					"<a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> is NetEase Anti-Cheat Experts. It is a kernel-level service NetEase documents as monitoring, analysis, detection, and penalty. Marvel Rivals starts that protection with the client. NetEase has said a launch parameter only hides the pop-up. It does not turn the anti-cheat off.",
+					"<a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> is NetEase Anti-Cheat Experts. It is a kernel-level service NetEase documents as monitoring, analysis, detection, and penalty. Marvel Rivals starts that protection with the client. NetEase has said a launch parameter only hides the pop-up. It does not turn the anti-cheat off.",
 					"Repeat offenders can get more than an account wipe. Official notes cover permanent bans plus device and IP penalties. That is why shops talk about spoofers and DMA in the same breath as cheat maintenance.",
 				],
 			},
@@ -1002,7 +1002,7 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "marvel-rivals-hacks",
 		imageKey: "blog13",
 		published: "2026-07-15",
-		updated: "2026-08-14",
+		updated: "2026-08-15",
 		category: "Comparisons",
 		featured: true,
 		translations: {
@@ -1018,8 +1018,8 @@ export const blogPosts: BlogPostDefinition[] = [
 			{
 				h2: "How to compare Marvel Rivals cheats without the banner",
 				paragraphs: [
-					"<strong>Marvel Rivals cheats</strong> that matter in 2026 are hero-aware. Hitscan Hela and projectile Iron Man do not share one aim profile. Ultimate charge and ability cooldowns decide payload fights. If a shop still lists “loot ESP” and “extract radar,” the page was cloned from another game.",
-					"<a href=\"https://nace.nie.easebar.com/docs/\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> runs with the <a href=\"https://www.marvelrivals.com/\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> client. NetEase has said you cannot disable it with a launch argument — that flag only hides a window. Repeat cases can add device and IP penalties on top of account bans. “Undetected forever” is a slogan. Dated <a href=\"/updates/\">Status</a> is the actual check.",
+					"<strong>Marvel Rivals cheats</strong> that matter in 2026 are hero-aware. Hitscan Hela and projectile Iron Man do not share one aim profile. Ultimate charge and ability cooldowns decide payload fights. If a shop still lists “hero ESP” and “cooldown tracker,” the page was cloned from another game.",
+					"<a href=\"__HOLD3__\" target=\"_blank\" rel=\"noopener noreferrer\">NACE</a> runs with the <a href=\"__HOLD0__\" target=\"_blank\" rel=\"noopener noreferrer\">Marvel Rivals</a> client. NetEase has said you cannot disable it with a launch argument — that flag only hides a window. Repeat cases can add device and IP penalties on top of account bans. “Undetected forever” is a slogan. Dated <a href=\"/updates/\">Status</a> is the actual check.",
 					"Four real buckets: free dumps (usually dead, often malware), cheap weekly internals with Discord-only news, a full Windows license with a public status URL, and DMA / Cloud-DMA / AWS that reads from a second box. Price without a bucket is noise.",
 				],
 			},
@@ -1054,44 +1054,44 @@ export const blogPosts: BlogPostDefinition[] = [
 		id: "elitefn-two-week-test",
 		imageKey: "blog3",
 		published: "2026-07-08",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Comparisons",
 		featured: false,
 		translations: {
 		en: {
-		slug: "elitefn-vs-tarkov-cheats-two-week-test",
-		title: "I Tested Another Tarkov Cheat for 2 Weeks First",
-		metaDescription: "A two-week test of another Escape from Tarkov cheat before switching to Tarkov Cheats — ESP feel, soft aim, patch downtime, and support differences.",
-		h1: "I Tested Another Tarkov Cheat for Two Weeks Before Switching",
-		intro: "My Discord kept recommending a popular Escape from Tarkov cheat brand. I gave it fourteen days on the same PC and playlists, then moved to Tarkov Cheats. This is what actually differed — without the usual affiliate script.",
-		keywords: ["tarkov cheats review","eft cheat comparison","tarkov cheat downtime","soft aim test","tarkov cheats"],
-		imageAlt: "Two week hands-on comparison between Tarkov cheat providers",
+		slug: "elitefn-vs-marvel-rivals-cheats-two-week-test",
+		title: "I Tested Another Marvel Rivals Cheat for 2 Weeks First",
+		metaDescription: "A two-week test of another Marvel Rivals cheat before switching to Marvel Rivals Cheats — ESP feel, soft aim, patch downtime, and support differences.",
+		h1: "I Tested Another Marvel Rivals Cheat for Two Weeks Before Switching",
+		intro: "My Discord kept recommending a popular Marvel Rivals cheat brand. I gave it fourteen days on the same PC and playlists, then moved to Marvel Rivals Cheats. This is what actually differed — without the usual affiliate script.",
+		keywords: ["marvel rivals cheats review","marvel rivals cheat comparison","marvel rivals cheat downtime","soft aim test","marvel rivals cheats"],
+		imageAlt: "Two week hands-on comparison between Marvel Rivals cheat providers",
 		sections: [
 			{
 				h2: "Week one — setup and first impressions",
 				paragraphs: [
 					"Delivery was fine: license in email, loader as admin, overlays disabled. Menu learning took a couple evenings. Player ESP was readable. Loot ESP felt secondary. I ran several nights with information tools only and no aim assist so I could judge visibility on its own.",
-					"Tarkov Cheats later felt similar on install time, but filters for loot and extracts were easier to toggle independently during loot routes.",
+					"Marvel Rivals Cheats later felt similar on install time, but filters for heroes and objectives were easier to toggle independently during map routes.",
 				],
 			},
 			{
-				h2: "Soft aim and the mid-raid feel",
+				h2: "Soft aim and the mid-match feel",
 				paragraphs: [
 					"Conservative FOV soft aim helped SMG and AR tracking. Sniping needed manual profile swaps that slowed me down. When I pushed smoothness too low, corrections looked obvious in review clips. Tuning toward smoother tracking fixed kills and reduced the robotic look.",
-					"On Tarkov Cheats I relied more on per-weapon profiles so dorms and long peeks did not share one magnet. Details are in the <a href=\"/tarkov-aimbot/\">aimbot guide</a>.",
+					"On Marvel Rivals Cheats I relied more on per-hero profiles so point holds and long peeks did not share one magnet. Details are in the <a href=\"/marvel-rivals-aimbot/\">aimbot guide</a>.",
 				],
 			},
 			{
 				h2: "The patch window that ended the trial",
 				paragraphs: [
-					"A Tarkov plus BattlEye update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queues while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
-					"Tarkov Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not queue blind after patches on any tool.",
+					"A Marvel Rivals plus NACE update landed mid-test. The other tool’s status went quiet without a clear ETA. I skipped queues while my group played without me. A rebuild arrived days later; stability was mixed. That downtime — not a single feature screenshot — pushed me to switch.",
+					"Marvel Rivals Cheats won me over with written notes on <a href=\"/updates/\">Updates</a>. I still do not queue blind after patches on any tool.",
 				],
 			},
 			{
-				h2: "After switching — what improved for my raids",
+				h2: "After switching — what improved for my matches",
 				paragraphs: [
-					"Independent loot and player toggles cleaned late-raid screens. Radar helped extract holds. Support replies with order ID were fast enough during setup week. Pricing math favored a single full stack over stacking weekly subs — see <a href=\"/pricing/\">Pricing</a>.",
+					"Independent hero and player toggles cleaned late-match screens. The cooldown tracker helped objective holds. Support replies with order ID were fast enough during setup week. Pricing math favored a single full stack over stacking weekly subs — see <a href=\"/pricing/\">Pricing</a>.",
 					"If you run your own test, measure patch downtime hours, not just day-one vibes. Then read <a href=\"/setup/\">Setup</a> before you buy anything.",
 				],
 			}
@@ -1100,48 +1100,48 @@ export const blogPosts: BlogPostDefinition[] = [
 		},
 	},
 	{
-		id: "tarkov-cheats-vs-ghostware",
+		id: "marvel-rivals-cheats-vs-ghostware",
 		imageKey: "blog9",
 		published: "2026-07-05",
-		updated: "2026-08-13",
+		updated: "2026-08-15",
 		category: "Comparisons",
 		featured: false,
 		translations: {
 		en: {
-		slug: "tarkov-cheats-vs-ghostware-features-pricing",
-		title: "Full-Stack Tarkov Cheats vs Minimal ESP Tools",
-		metaDescription: "Full-stack Tarkov Cheats versus minimal ESP-only Escape from Tarkov tools — feature depth, radar, soft aim, pricing, and who should buy which style.",
-		h1: "Full-Stack Tarkov Cheats vs Minimal ESP-Only Tools",
-		intro: "Some Escape from Tarkov tools sell a slim ESP module and call it a day. Tarkov Cheats ships the wider raid stack. Neither philosophy is automatically wrong — they fit different players. Here is a clear comparison.",
-		keywords: ["tarkov esp only cheat","tarkov cheats features","radar vs esp","tarkov cheat pricing","tarkov cheats"],
-		imageAlt: "Full stack Tarkov Cheats compared with minimal ESP-only tools",
+		slug: "marvel-rivals-cheats-vs-ghostware-features-pricing",
+		title: "Full-Stack Marvel Rivals Cheats vs Minimal ESP Tools",
+		metaDescription: "Full-stack Marvel Rivals Cheats versus minimal ESP-only Marvel Rivals tools — feature depth, radar, soft aim, pricing, and who should buy which style.",
+		h1: "Full-Stack Marvel Rivals Cheats vs Minimal ESP-Only Tools",
+		intro: "Some Marvel Rivals tools sell a slim ESP module and call it a day. Marvel Rivals Cheats ships the wider match stack. Neither philosophy is automatically wrong — they fit different players. Here is a clear comparison.",
+		keywords: ["marvel rivals esp only cheat","marvel rivals cheats features","cooldown tracker vs esp","marvel rivals cheat pricing","marvel rivals cheats"],
+		imageAlt: "Full stack Marvel Rivals Cheats compared with minimal ESP-only tools",
 		sections: [
 			{
-				h2: "Two philosophies: minimal surface vs full raid loop",
+				h2: "Two philosophies: minimal surface vs full match loop",
 				paragraphs: [
-					"Minimal tools focus on player boxes and light assist. Fewer features can mean a simpler menu and a lower price. Full-stack tools add loot filters, radar, and soft aim profiles so one menu covers information and fights.",
-					"Tarkov Cheats is intentionally full-stack. If you only need outlines in quiet raids, a slim ESP product may feel enough. If you rotate, loot, and hold extracts, missing radar becomes obvious.",
+					"Minimal tools focus on player boxes and light assist. Fewer features can mean a simpler menu and a lower price. Full-stack tools add hero filters, radar, and soft aim profiles so one menu covers information and fights.",
+					"Marvel Rivals Cheats is intentionally full-stack. If you only need outlines in quiet matches, a slim ESP product may feel enough. If you rotate, track ultimates, and hold objectives, missing the cooldown tracker becomes obvious.",
 				],
 			},
 			{
 				h2: "Feature and pricing reality check",
 				paragraphs: [
-					"Tarkov Cheats monthly is $35 and lifetime is $150 for ESP, radar, and soft aim together. Slimmer competitors often undercut sticker price while charging extra for modules you assumed were included. Always read the feature list, not the banner.",
-					"Our public comparison points live on <a href=\"/features/\">Features</a>, <a href=\"/tarkov-esp/\">ESP</a>, <a href=\"/tarkov-radar-hack/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>.",
+					"Marvel Rivals Cheats monthly is $35 and lifetime is $150 for ESP, radar, and soft aim together. Slimmer competitors often undercut sticker price while charging extra for modules you assumed were included. Always read the feature list, not the banner.",
+					"Our public comparison points live on <a href=\"/features/\">Features</a>, <a href=\"/marvel-rivals-esp/\">ESP</a>, <a href=\"/marvel-rivals-cooldown-tracker/\">radar</a>, and <a href=\"/pricing/\">Pricing</a>.",
 				],
 			},
 			{
 				h2: "Detection talk without fairy tales",
 				paragraphs: [
 					"Smaller user bases generate fewer public ban screenshots — that is not proof of safety. Larger brands generate more noise even when maintenance is solid. Judge sellers by patch communication speed and whether you can find a dated status note.",
-					"Tarkov Cheats documents maintenance on <a href=\"/battleye-bypass/\">BattlEye workflow</a> and <a href=\"/undetected-tarkov-cheats/\">undetected notes</a>.",
+					"Marvel Rivals Cheats documents maintenance on <a href=\"/updates/\">NACE workflow</a> and <a href=\"/marvel-rivals-cheats/\">undetected notes</a>.",
 				],
 			},
 			{
 				h2: "Which style should you buy?",
 				paragraphs: [
-					"Choose minimal ESP if budget is tight, you play casually, and you accept Discord-only status tracking. Choose Tarkov Cheats if radar, loot filters, configurable soft aim, and a public Updates URL are must-haves.",
-					"Decide your must-haves on paper first. Then open <a href=\"/tarkov-cheats/\">tarkov cheats</a> or keep shopping slim tools — but do not skip patch-day checks on either path.",
+					"Choose minimal ESP if budget is tight, you play casually, and you accept Discord-only status tracking. Choose Marvel Rivals Cheats if radar, hero filters, configurable soft aim, and a public Updates URL are must-haves.",
+					"Decide your must-haves on paper first. Then open <a href=\"/marvel-rivals-cheats/\">marvel rivals cheats</a> or keep shopping slim tools — but do not skip patch-day checks on either path.",
 				],
 			}
 		]

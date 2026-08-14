@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Completes escape-from-tarkov-cheats SEO audit: add missing pages, fix leftovers, strip Zadeyo from meta.
+ * Completes remaining SEO audit: add missing pages and fix leftover meta.
  * Run: node scripts/complete-seo-audit.mjs
  */
 import { readFile, writeFile, mkdir, access } from 'node:fs/promises';
@@ -77,22 +77,9 @@ const GLOBAL_REPLACEMENTS = [
 		'How ESP wallhack, radar, and Aimbot rebuild after Escape from Tarkov anti-cheat'],
 ];
 
-/** Remove Zadeyo from meta description/title strings only */
-function stripZadeyoFromMeta(text) {
-	return text
-		.replace(/\s*[—–-]\s*checkout via Zadeyo\.?/gi, '.')
-		.replace(/\s*[—–-]\s*checkout en Zadeyo\.?/gi, '.')
-		.replace(/\s*[—–-]\s*checkout via Zadeyo\.?/gi, '.')
-		.replace(/\s*with Zadeyo checkout\.?/gi, '.')
-		.replace(/\s*via Zadeyo checkout\.?/gi, '.')
-		.replace(/\s*Checkout via Zadeyo\.?/gi, '')
-		.replace(/\s*Zadeyo checkout,?\s*/gi, ' ')
-		.replace(/\s*Zadeyo delivery\.?/gi, 'instant digital delivery.')
-		.replace(/\s*and Zadeyo delivery\.?/gi, ' and instant digital delivery.')
-		.replace(/\|\s*Instant Zadeyo Delivery/g, '| Instant Digital Delivery')
-		.replace(/Buy on Zadeyo/g, 'Buy Tarkov Cheats')
-		.replace(/\s{2,}/g, ' ')
-		.trim();
+/** Collapse extra spaces in meta strings. */
+function stripVendorFromMeta(text) {
+	return text.replace(/\s{2,}/g, ' ').trim();
 }
 
 async function walkFiles(dir, exts, files = []) {
@@ -131,12 +118,11 @@ async function applyGlobalFixes() {
 			content = content.replace(pattern, replacement);
 		}
 		if (file.endsWith('pages-en.mjs')) {
-			// Strip Zadeyo from description: and title: lines
 			content = content.replace(/(description:\s*['"])([^'"]+)(['"])/g, (_, pre, body, post) =>
-				pre + stripZadeyoFromMeta(body) + post,
+				pre + stripVendorFromMeta(body) + post,
 			);
 			content = content.replace(/(title:\s*['"])([^'"]+)(['"])/g, (_, pre, body, post) =>
-				pre + stripZadeyoFromMeta(body) + post,
+				pre + stripVendorFromMeta(body) + post,
 			);
 		}
 		if (content !== original) {

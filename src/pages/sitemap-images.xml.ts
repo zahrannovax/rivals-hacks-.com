@@ -17,7 +17,7 @@ const PREFERRED_HOSTS = [
 	englishPaths['tarkov-esp'],
 	englishPaths['tarkov-aimbot'],
 	englishPaths.hacks,
-	englishPaths.undetected,
+	englishPaths.radar,
 ] as const;
 
 /**
