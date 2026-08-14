@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import { productInfo, siteConfig } from '../data/site';
-import { brandTheme, brandThemeInlineStyle, brandThemeRootCss } from '../data/brand-theme';
+import { brandTheme, brandThemeRootCss } from '../data/brand-theme';
 import I18nHead from '../components/I18nHead.astro';
 import LocaleSuggest from '../components/LocaleSuggest.astro';
 import InlineBrandEditor from '../components/InlineBrandEditor.astro';
@@ -162,9 +162,9 @@ if (aboutNode) {
 ---
 
 <!doctype html>
-<html lang={locale} dir={localeMeta.dir} style={brandThemeInlineStyle()}>
+<html lang={locale} dir={localeMeta.dir}>
 	<head>
-		<meta charset="utf-8" />
+		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
 		<meta name="color-scheme" content="dark" />
 		<meta name="theme-color" content={brandTheme.bg} />
