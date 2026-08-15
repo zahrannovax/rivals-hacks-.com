@@ -1,48 +1,52 @@
-# Tarkov Cheats — Marketing Site
+# Marvel Rivals Cheats — Marketing Site
 
-Static Astro 7 site for [tarkovcheats.org](https://tarkovcheats.org). Primary SEO keyword: **tarkov cheats** (secondary: escape from tarkov cheats, aimbot, ESP).
+Static Astro 7 site for [rivalshacks.com](https://rivalshacks.com). Primary SEO keyword: **marvel rivals cheats** (secondary: marvel rivals hacks, ESP, aimbot).
 
 ## Stack
 
 - Astro 7 + Tailwind CSS 4 + TypeScript
 - 22-locale i18n (English at root, `/es/`, `/fr/`, …)
-- Cloudflare Pages deployment with `functions/_middleware.js`
+- Cloudflare Pages (dashboard upload or Git). Path redirects live in `public/_redirects`.
 
 ## Quick start
 
-```bash
+```powershell
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 npm install
 npm run generate:i18n   # after editing scripts/i18n-data/*
 node scripts/generate-blog-posts.mjs
 npm run dev
 ```
 
+Brand Studio (localhost only): [http://localhost:4321/brand-studio/](http://localhost:4321/brand-studio/)
+
 Build and validate sitemaps:
 
-```bash
+```powershell
 npm run build:validate
 ```
 
-## Deploy (Cloudflare Pages)
+## Deploy (Cloudflare Pages dashboard)
 
-1. Create a Cloudflare Pages project named **besttarkovcheats**
-2. Connect this repo or upload `dist/` after `npm run build`
-3. Build command: `npm run build`
-4. Output directory: `dist`
-5. Add custom domain **tarkovcheats.org** (apex) and redirect **www** → apex
-6. Enable SSL **Always Use HTTPS**
+Do **not** use Wrangler or `npm run deploy`. Full steps: [DEPLOY.md](./DEPLOY.md).
 
-CLI deploy:
+1. `npm run build:validate`
+2. Zip the **contents** of `dist/` (zip root must include `index.html`, `_redirects`, `sitemap.xml`)
+3. Cloudflare → **Workers & Pages** → **Create** → **Pages** → **Upload assets**
+4. Project name: `rivalshacks`
+5. Custom domains: `rivalshacks.com` and `www.rivalshacks.com`
+6. SSL **Full (strict)** + **Always Use HTTPS**
+7. Redirect Rule: www → `https://rivalshacks.com` (301)
 
-```bash
-npm run pages:deploy
-```
+**Git instead of zip (still no Wrangler):** connect this repo. Framework Astro, build `npm run build`, output `dist`, env `NODE_VERSION=22.12.0`.
+
+Later updates: rebuild locally → **Create deployment** → upload a new zip of `dist/` contents.
 
 ## Environment
 
 - Node.js >= 22.12.0
-- Checkout URL: Zadeyo Tarkov product (`siteConfig.checkoutUrl` in `src/data/site.ts`)
+- Brand, domain, keywords, and checkout: `src/data/brand.ts` (or Brand Studio), then `npm run sync:brand`
 
 ## License
 
-Private — for tarkovcheats.org deployment only.
+Private — for rivalshacks.com deployment only.
